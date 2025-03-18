@@ -86,18 +86,18 @@ export default function HomePage() {
             </div>
         <nav className='fiNavBar'>
                 <ul>
-                    <li>Home</li>
-                    <li>Works</li>
-                    <li>Profil</li>
+                    <li>home</li>
+                    <li>works</li>
+                    <li>profil</li>
                 </ul>
         </nav>
         <section className='graphicWrapper' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
-            <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">Graphic Designer & Art Director</h1>
+            <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">GRAPHIC DESIGNER & ART DIRECTOR</h1>
             <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">
                 <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>About me</h2>
                 <p className='pContainerAProposDeMoi' data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">
-                    Passionnée par la création visuelle et l'innovation, je mets mon expertise au service de projets variés, 
+                    passionnée par la création visuelle et l'innovation, je mets mon expertise au service de projets variés, 
                     allant de la création de marque au design éditorial, en passant par la photographie et l'illustration. 
                     Mon approche allie rigueur technique et sensibilité artistique, avec une attention particulière portée à 
                     l'expérience utilisateur et à l'impact visuel.
