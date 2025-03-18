@@ -1,0 +1,27 @@
+/* Define the Compendium font */
+@font-face {
+    font-family: 'Compendium';
+    src: url('../assets/fonts/Compendium.ttf') format('truetype'); /* .ttf format */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}   
+@font-face {
+    font-family: 'FormaDJRDisplay-Bold';
+    src: url('../assets/fonts/FormaDJRDisplay-Bold-Testing.ttf') format('truetype'); /* .ttf format */
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}
+
+/* Define FormaDJRDisplay-Regular-Testing */
+@font-face {
+    font-family: 'FormaDJRDisplay-Regular';
+    src: url('../assets/fonts/FormaDJRDisplay-Regular-Testing.ttf') format('truetype'); /* .ttf format */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}
+body{
+    font-family: 'FormaDJRDisplay-Regular', sans-serif;
+}

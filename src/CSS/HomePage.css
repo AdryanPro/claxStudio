@@ -5,6 +5,22 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Ensures text is visible while the font loads */
+}   
+@font-face {
+    font-family: 'FormaDJRDisplay-Bold';
+    src: url('../assets/fonts/FormaDJRDisplay-Bold-Testing.ttf') format('truetype'); /* .ttf format */
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}
+
+/* Define FormaDJRDisplay-Regular-Testing */
+@font-face {
+    font-family: 'FormaDJRDisplay-Regular';
+    src: url('../assets/fonts/FormaDJRDisplay-Regular-Testing.ttf') format('truetype'); /* .ttf format */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
 }
 
 /* Apply the font to elements with the coolFont class */
@@ -14,6 +30,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'FormaDJRDisplay-Regular', sans-serif;
     cursor: none;
 }
 .h1HomePage{
@@ -32,19 +49,20 @@ body{
     font-size: 2.6rem;
 }
 
-/* 🚀 Carousel Wrapper */
+/* Carousel Wrapper */
 .carouselWrapper {
     overflow-x: hidden;
     width: 100%;
     position: relative;
     white-space: nowrap;
     margin-top: 19vh;
+    min-height: 650px;
 }
 
 /* 🚀 Infinite Scroll Effect */
 .carouselTrack {
     display: flex;
-    gap: 250px;
+    gap: 150px;
     animation: infiniteScroll 40s linear infinite;
     width: calc((210px + 250px) * 14);
 }
@@ -67,8 +85,9 @@ body{
 /* 🚀 Container for text (above the image) */
 .textContainer {
     position: absolute;
-    top: -90px; /* Moves text above */
-    left: -27px;
+    top: -110px; /* Moves text above */
+    margin-left: 0.5vw;
+    /* left: -19px; */
     width: 100%;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.9);
@@ -86,13 +105,14 @@ body{
     justify-content: center;
     align-items: center;
     text-align: left;
-    height: 450px; /* Enough space for scaling */
+    min-height: 380px; /* +150 */
+    min-height: 500px;/* ADDED */
 }
 
 /* 🚀 Image */
 .carouselImg {
-    max-width: 210px;
-    max-height: 297px;
+    min-width: 260px; /* +50 */
+    min-height: 347px; /* +50 */
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }   
@@ -103,6 +123,7 @@ body{
 }
 
 .carouselCard:hover .textContainer {
+    margin-left: 0.5vw;
     opacity: 1;
     transform: translateY(0); /* Slide up to reveal */
 }
@@ -184,7 +205,7 @@ body{
 }
 .aProposDeMoiH2{
     text-align: right;
-    margin-left: 5vw;
+    margin-right: 2vw;
 }
 .pContainerAProposDeMoi{
     max-width: 316px;
@@ -204,10 +225,11 @@ body{
 }
 .contactH2{
     text-align: right;
+    margin-right: 3vw;
 }
 .creativeApproch{
     position: absolute;
-    right: 6vw;
+    right: 8vw;
     top: 24vh;
     text-align: right;
     max-width: 492px !important;
@@ -228,11 +250,11 @@ body{
     text-align: left;
     margin-right: 1vw;
     z-index: 11;
-    right: 8vw;
+    right: 6vw;
 }
 .keySkills{
     position: absolute;
-    right: 6vw;
+    right: 8vw;
     top: 60vh;
     width: 400px;
     height: 151px;
@@ -253,9 +275,10 @@ body{
 }
 .keySkillsH2{
     text-align: left;
-    margin-right: 2vw;
+    margin-left: 3vw;
     margin-bottom: 3vh;
     z-index: 11;
-    right: 8vw;
+    /* right: 8vw; */
     overflow-x: hidden;
+    padding-block: 1vh;
 }

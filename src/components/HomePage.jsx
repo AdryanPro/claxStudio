@@ -51,7 +51,7 @@ export default function HomePage() {
         <h1 className='h2HomePage coolFont'>Clax Studio</h1>
 
         <div className="carouselWrapper">
-            <h2 className='carouselTitle coolFont'>WORKS</h2>
+            <h2 className='carouselTitle coolFont'>Works</h2>
             <div className="carouselTrack">
                 {images.concat(images).map((item, index) => (
                     <div className="carouselCard" key={index}>
@@ -95,9 +95,9 @@ export default function HomePage() {
             </div>
 
             <div className="creativeApproch" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
-                <p>Je crois en un design qui raconte des histoires et suscite des émotions. 
+                <p>Je crois en un design qui raconte des histoires et suscite des émotions.
                     Que ce soit à travers une affiche illustrative, un packaging écoresponsable
-                     ou une installation immersive, je m'efforce de créer des expériences visuelles 
+                     ou une installation immersive, je m'efforce de créer des expériences visuelles
                     qui marquent les esprits et inspirent.
                 </p>
                 <h2 className='creativeApprochH2' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approch</h2>
