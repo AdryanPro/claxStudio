@@ -1,4 +1,10 @@
-/* Header titles */
+body{
+    margin: 0;
+    padding: 0;
+}
+.coolFont{
+    font-family: 'Compendium', sans-serif;
+  }
 .h1HomePage{
     margin-left: 12vw;
     margin-top: 12vh;
@@ -24,7 +30,7 @@
 .carouselTrack {
     display: flex;
     gap: 250px;
-    animation: infiniteScroll 20s linear infinite;
+    animation: infiniteScroll 40s linear infinite;
     width: calc((210px + 250px) * 14);
 }
 
@@ -74,7 +80,7 @@
     max-height: 297px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-}
+}   
 
 /* 🚀 Hover Effects */
 .carouselCard:hover .carouselImg {
@@ -94,4 +100,142 @@
     to {
         transform: translateX(calc(-210px * 7 - 250px * 7)); /* Move by one full set of images */
     }
+}
+
+                    /* Fix NavBar */
+/* Fixed Navigation Bar */
+.fiNavBar {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 3vw;
+    margin-bottom: 6vh;
+    margin-top: 6vh;
+}
+
+/* Navigation List */
+.fiNavBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 21px;
+}
+
+/* Navigation List Items */
+.fiNavBar ul li {
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Optional: Hover effect for list items */
+.fiNavBar ul li:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+                    /* section graphic */
+.graphicWrapper{
+    background-color: black;
+    min-height: 70vh;
+    color: white;
+    padding-inline: 6vw;
+    padding-block: 9vh;
+    position: relative;
+    margin-bottom: 11vh;
+}
+.graphicWrapper h2{
+    font-family: Compendium;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.decale{
+    margin-left: 6vw !important;
+}
+
+.aProposDeMoi{ 
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 416px;
+    margin-top: 20vh;
+}
+.aProposDeMoiH2{
+    text-align: right;
+    margin-left: 5vw;
+}
+.pContainerAProposDeMoi{
+    max-width: 316px;
+    min-height: 151px;
+}
+.contact{
+    color: white;
+    width: 250px;
+    margin-top: 20vh;
+    opacity: 1; /* Ensure it's visible by default */
+    visibility: visible; /* Ensure it's not hidden */
+    transform: none; /* Reset any transformations */
+}
+.pContainerContact{
+    width: 180px;
+    height: 18px;
+}
+.contactH2{
+    text-align: right;
+}
+.creativeApproch{
+    position: absolute;
+    right: 6vw;
+    top: 20vh;
+    text-align: right;
+    max-width: 492px !important;
+    max-height: 113px !important;
+    height: 113px;
+}
+.creativeApproch p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-left: 200px;
+    text-transform: lowercase;
+    text-align: left;
+}
+.creativeApprochH2{
+    position: absolute;
+    text-align: left;
+    margin-right: 1vw;
+    z-index: 11;
+    right: 8vw;
+}
+.keySkills{
+    position: absolute;
+    right: 6vw;
+    top: 50vh;
+    width: 400px;
+    height: 151px;
+}
+.keySkills ul{
+    font-family: Forma DJR Display;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: lowercase;
+    padding-left: 120px;
+    max-width: 316px;
+    max-height: 151px;
+}
+.keySkills li{
+    margin-bottom: 1vh;
+}
+.keySkillsH2{
+    text-align: left;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+    z-index: 11;
+    right: 8vw;
 }
