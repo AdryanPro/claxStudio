@@ -112,7 +112,7 @@ export default function HomePage() {
             </div>
 
             <div className="creativeApproch" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
-                <p>Je crois en un design qui raconte des histoires et suscite des émotions.
+                <p className='creativeApprocheP'>Je crois en un design qui raconte des histoires et suscite des émotions.
                     Que ce soit à travers une affiche illustrative, un packaging écoresponsable
                      ou une installation immersive, je m'efforce de créer des expériences visuelles
                     qui marquent les esprits et inspirent.

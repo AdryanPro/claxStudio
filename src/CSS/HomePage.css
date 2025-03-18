@@ -257,13 +257,14 @@ body{
     padding-left: 200px;
     text-transform: lowercase;
     text-align: left;
+    margin-bottom: 3px;
 }
 .creativeApprochH2{
     position: absolute;
     text-align: left;
     margin-right: 1vw;
     z-index: 11;
-    right: 6vw;
+    right: 11vw;
     margin-top: 0 !important;
 }
 .keySkills{
@@ -283,6 +284,7 @@ body{
     padding-left: 120px;
     max-width: 316px;
     max-height: 151px;
+    margin-top: 0;
 }
 .keySkills li{
     margin-bottom: 1vh;
