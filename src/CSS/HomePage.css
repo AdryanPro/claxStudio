@@ -63,9 +63,9 @@ body{
 .carouselTrack {
     display: flex;
     gap: 15px;
-    animation: infiniteScroll 10s linear infinite;
+    animation: infiniteScroll 20s linear infinite;
     width: calc((260px + 15px) * 14); /* Adjust width to match doubled images */
-    animation-delay: -20s; /* Add this for smooth looping */
+    animation-delay: -30s; /* Add this for smooth looping */
   }
 
 /* 🚀 Pause animation on hover */
