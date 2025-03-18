@@ -1,0 +1,97 @@
+/* Header titles */
+.h1HomePage{
+    margin-left: 12vw;
+    margin-top: 12vh;
+}
+.h2HomePage{
+    margin-left: 15vw;
+}
+.carouselTitle{
+    text-align: right;
+    margin-right: 3vw;
+}
+
+/* 🚀 Carousel Wrapper */
+.carouselWrapper {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 24vh;
+}
+
+/* 🚀 Infinite Scroll Effect */
+.carouselTrack {
+    display: flex;
+    gap: 250px;
+    animation: infiniteScroll 20s linear infinite;
+    width: calc((210px + 250px) * 14);
+}
+
+/* 🚀 Pause animation on hover */
+.carouselTrack:hover {
+    animation-play-state: paused;
+}
+
+/* 🚀 Each Card */
+.carouselCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    height: 450px; /* Ensures enough space for scaling */
+}
+
+/* 🚀 Container for text (above the image) */
+.textContainer {
+    position: absolute;
+    top: -90px; /* Moves text above */
+    left: -27px;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(100%); /* Start below the image (hidden) */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out 0.2s;
+    margin-bottom: 6vh;
+}
+
+/* 🚀 Image Wrapper (Ensures enough space for scaling) */
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 450px; /* Enough space for scaling */
+}
+
+/* 🚀 Image */
+.carouselImg {
+    max-width: 210px;
+    max-height: 297px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🚀 Hover Effects */
+.carouselCard:hover .carouselImg {
+    transform: scale(1.3); /* Expand the image */
+}
+
+.carouselCard:hover .textContainer {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to reveal */
+}
+
+/* 🚀 Smooth infinite scroll animation */
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-210px * 7 - 250px * 7)); /* Move by one full set of images */
+    }
+}
