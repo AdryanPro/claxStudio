@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import carousel1 from '../assets/carousel/carouselWorks1.png';
 import carousel2 from '../assets/carousel/carouselWorks2.png';
 import carousel3 from '../assets/carousel/carouselWorks3.png';
@@ -7,29 +7,46 @@ import carousel5 from '../assets/carousel/carouselWorks5.png';
 import carousel6 from '../assets/carousel/carouselWorks6.png';
 import carousel7 from '../assets/carousel/carouselWorks7.png';
 import "../CSS/HomePage.css";
+import "../CSS/customCursor.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function HomePage() {
     const images = [
-        { src: carousel1, text1: "(04)", text2: "set design", text3: "© plaisirs éphémères SDP 24, CL29" },
-        { src: carousel2, text1: "(05)", text2: "fashion editorial", text3: "© élégance moderne SDP 25, CL30" },
-        { src: carousel3, text1: "(06)", text2: "artistic direction", text3: "© vision future SDP 26, CL31" },
-        { src: carousel4, text1: "(07)", text2: "visual storytelling", text3: "© néo-rétro SDP 27, CL32" },
-        { src: carousel5, text1: "(08)", text2: "contemporary art", text3: "© abstrait vivant SDP 28, CL33" },
-        { src: carousel6, text1: "(09)", text2: "avant-garde", text3: "© créativité infinie SDP 29, CL34" },
-        { src: carousel7, text1: "(10)", text2: "cinematic aesthetics", text3: "© lumière et ombre SDP 30, CL35" }
+        { src: carousel1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29" },
+        { src: carousel2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29" },
+        { src: carousel3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29" },
+        { src: carousel4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29" },
+        { src: carousel5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29" },
+        { src: carousel6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29" },
+        { src: carousel7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29" }
     ];
+    const [cursorColor, setCursorColor] = useState('black'); // Default color
+    const cursorRef = useRef(null); // Ref for the cursor element
+
+    useEffect(() => {
+        const cursor = cursorRef.current;
+        if (!cursor) return;
+    
+        const handleMouseMove = (e) => {
+            // Update the cursor position using `top` and `left`
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        };
+    
+        document.addEventListener('mousemove', handleMouseMove);
+        return () => document.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
+    // Change cursor color based on background
+    const handleBackgroundChange = (color) => {
+        setCursorColor(color === 'black' ? 'white' : 'black');
+    };
     AOS.init();
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 800, // Animation duration
-    //         once: true, // Whether animation should happen only once
-    //     });
-    //     AOS.refresh();
-    // }, []);
   return (
     <div>
+    <div className="custom-cursor" ref={cursorRef} style={{ backgroundColor: cursorColor }}></div>
+
         <h1 className='h1HomePage'>CLAX STUDIO</h1>
         <h1 className='h2HomePage coolFont'>Clax Studio</h1>
 
@@ -57,7 +74,7 @@ export default function HomePage() {
                     <li>Profil</li>
                 </ul>
         </nav>
-        <section className='graphicWrapper'>
+        <section className='graphicWrapper' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">Graphic Designer & Art Director</h1>
             <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">

@@ -1,20 +1,34 @@
+/* Define the Compendium font */
+@font-face {
+    font-family: 'Compendium';
+    src: url('../assets/fonts/Compendium.ttf') format('truetype'); /* .ttf format */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}
+
+/* Apply the font to elements with the coolFont class */
+.coolFont {
+    font-family: 'Compendium', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
 }
-.coolFont{
-    font-family: 'Compendium', sans-serif;
-  }
 .h1HomePage{
     margin-left: 12vw;
     margin-top: 12vh;
+    font-size: 2.6rem;
 }
 .h2HomePage{
-    margin-left: 15vw;
+    margin-left: 20vw;
+    font-size: 2.6rem;
+
 }
 .carouselTitle{
     text-align: right;
     margin-right: 3vw;
+    font-size: 2.6rem;
 }
 
 /* 🚀 Carousel Wrapper */
@@ -23,7 +37,7 @@ body{
     width: 100%;
     position: relative;
     white-space: nowrap;
-    margin-top: 24vh;
+    margin-top: 19vh;
 }
 
 /* 🚀 Infinite Scroll Effect */
@@ -144,6 +158,7 @@ body{
     padding-block: 9vh;
     position: relative;
     margin-bottom: 11vh;
+    overflow-x: hidden !important; 
 }
 .graphicWrapper h2{
     font-family: Compendium;
@@ -238,4 +253,5 @@ body{
     margin-bottom: 3vh;
     z-index: 11;
     right: 8vw;
+    overflow-x: hidden;
 }
