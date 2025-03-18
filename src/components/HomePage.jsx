@@ -95,7 +95,7 @@ export default function HomePage() {
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">Graphic Designer & Art Director</h1>
             <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">
-                <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>À propos de moi</h2>
+                <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>About me</h2>
                 <p className='pContainerAProposDeMoi' data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">
                     Passionnée par la création visuelle et l'innovation, je mets mon expertise au service de projets variés, 
                     allant de la création de marque au design éditorial, en passant par la photographie et l'illustration. 

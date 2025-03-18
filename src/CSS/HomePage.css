@@ -95,7 +95,7 @@ body{
     font-weight: bold;
     opacity: 0;
     transform: translateY(100%); /* Start below the image (hidden) */
-    transition: opacity 0.3s ease-in-out, transform 1.3s ease-in-out 0.2s;
+    transition: opacity 0.3s ease-in-out, transform 1.3s ease-in-out 0.2s; /* Modifying the seep of the text*/
     margin-bottom: 6vh;
 }
 
@@ -114,7 +114,7 @@ body{
     min-width: 260px; /* +50 */
     min-height: 347px; /* +50 */
     object-fit: cover;
-    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out; /* Modifying the seep of the image*/
 }
 .coloredImg{
     display: none;
