@@ -6,6 +6,14 @@ import carousel4 from '../assets/carousel/carouselWorks4.png';
 import carousel5 from '../assets/carousel/carouselWorks5.png';
 import carousel6 from '../assets/carousel/carouselWorks6.png';
 import carousel7 from '../assets/carousel/carouselWorks7.png';
+import colored1 from '../assets/carousel/colored1.png';
+import colored2 from '../assets/carousel/colored2.png';
+import colored3 from '../assets/carousel/colored3.png';
+import colored4 from '../assets/carousel/colored4.png';
+import colored5 from '../assets/carousel/colored5.png';
+import colored6 from '../assets/carousel/colored6.png';
+import colored7 from '../assets/carousel/colored7.png';
+
 import "../CSS/HomePage.css";
 import "../CSS/customCursor.css"
 import AOS from 'aos';
@@ -13,13 +21,13 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function HomePage() {
     const images = [
-        { src: carousel1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29" },
-        { src: carousel2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29" },
-        { src: carousel3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29" },
-        { src: carousel4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29" },
-        { src: carousel5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29" },
-        { src: carousel6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29" },
-        { src: carousel7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29" }
+        { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29" },
+        { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29" },
+        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29" },
+        { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29" },
+        { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29" },
+        { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29" },
+        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29" }
     ];
     const [cursorColor, setCursorColor] = useState('black'); // Default color
     const cursorRef = useRef(null); // Ref for the cursor element
@@ -54,19 +62,28 @@ export default function HomePage() {
             <h2 className='carouselTitle coolFont'>Works</h2>
             <div className="carouselTrack">
                 {images.concat(images).map((item, index) => (
-                    <div className="carouselCard" key={index}>
-                        <div className="textContainer">
-                            <p className="line1">{item.text1}</p>
-                            <p className="line2">{item.text2}</p>
-                            <p className="line3">{item.text3}</p>
-                        </div>
-                        <div className="imageWrapper">
-                            <img src={item.src} alt={`carousel ${index}`} className='carouselImg' />
-                        </div>
+                <div className="carouselCard" key={index}>
+                    <div className="textContainer">
+                    <p className="line1">{item.text1}</p>
+                    <p className="line2">{item.text2}</p>
+                    <p className="line3">{item.text3}</p>
                     </div>
+                    <div className="imageWrapper">
+                    <img 
+                        src={item.src} 
+                        alt={`carousel ${index}`} 
+                        className='carouselImg defaultImg' 
+                    />
+                    <img 
+                        src={item.coloredSrc} 
+                        alt={`carousel ${index} colored`} 
+                        className='carouselImg coloredImg' 
+                    />
+                    </div>
+                </div>
                 ))}
             </div>
-        </div>
+            </div>
         <nav className='fiNavBar'>
                 <ul>
                     <li>Home</li>
