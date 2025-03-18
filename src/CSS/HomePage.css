@@ -46,7 +46,7 @@ body{
 .carouselTitle{
     text-align: right;
     margin-right: 3vw;
-    margin-bottom: 0;
+    margin-top: 0vh;
     font-size: 2.6rem;
 }
 
@@ -200,6 +200,8 @@ body{
     font-size: 32px;
     line-height: 100%;
     letter-spacing: 0%;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .decale{
     margin-left: 6vw !important;
@@ -219,6 +221,7 @@ body{
 .pContainerAProposDeMoi{
     max-width: 316px;
     min-height: 151px;
+    margin-top: 0;
 }
 .contact{
     color: white;
@@ -231,6 +234,7 @@ body{
 .pContainerContact{
     width: 180px;
     height: 18px;
+    margin-bottom: 0;
 }
 .contactH2{
     text-align: right;
@@ -260,6 +264,7 @@ body{
     margin-right: 1vw;
     z-index: 11;
     right: 6vw;
+    margin-top: 0 !important;
 }
 .keySkills{
     position: absolute;
@@ -286,9 +291,11 @@ body{
 .keySkillsH2{
     text-align: left;
     margin-left: 3vw;
-    margin-bottom: 3vh;
+    margin-bottom: 0;
     z-index: 11;
     /* right: 8vw; */
     overflow-x: hidden;
     padding-block: 1vh;
+    padding-bottom: 0;
+    min-height: 34px;
 }
