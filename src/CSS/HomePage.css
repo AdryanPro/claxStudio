@@ -55,7 +55,7 @@ body{
     width: 100%;
     position: relative;
     white-space: nowrap;
-    margin-top: 9vh;
+    margin-top: 6vh;
     min-height: 650px;
 }
 
@@ -153,7 +153,7 @@ body{
     width: auto;
     background-color: rgba(255, 255, 255, 0.9);
     margin-right: 3vw;
-    margin-bottom: 6vh;
+    margin-bottom: 9vh;
 }
 
 /* Navigation List */
