@@ -5,7 +5,7 @@ export default function WorksNavPage() {
   return (
     <div className='worksPageWrapper'>
         <ul>
-            <Link href="">
+            <Link to='/Molly'>
             <li><span>(01)</span> MOOLY :</li>
             <p>Création de marque.</p></Link>
 

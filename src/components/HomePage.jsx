@@ -18,6 +18,7 @@ import "../CSS/HomePage.css";
 import "../CSS/customCursor.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     const images = [
@@ -86,9 +87,9 @@ export default function HomePage() {
             </div>
         <nav className='fiNavBar'>
                 <ul>
-                    <li>home</li>
-                    <li>works</li>
-                    <li>profil</li>
+                    <Link to='/'><li>home</li></Link>
+                    <Link to='/WorksNav' ><li>works</li></Link>
+                    <a href=""><li>profil</li></a>
                 </ul>
         </nav>
         <section className='graphicWrapper' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
