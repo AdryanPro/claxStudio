@@ -92,11 +92,11 @@
 @media only screen 
   and (min-width: 1280px) 
   and (max-width: 1440px) {
-    .topProjectWrapper{
-        background-color: red;
+    .headerComponent{
+        margin-bottom: 12vh;
     }
-    body{
-        background-color: red;
+    .imgRandomMix{
+        margin-top: 25vh;
     }
 }
 @media only screen 
@@ -104,7 +104,10 @@
   and (max-device-width: 2560px) 
   and (min-device-height: 1600px) 
   and (max-device-height: 1600px) {
-    .topProjectWrapper{
-        background-color: red;
+    .headerComponent{
+        margin-bottom: 12vh;
+    }
+    .imgRandomMix{
+        margin-top: 25vh;
     }
 }
