@@ -193,7 +193,6 @@ body{
 }
 .graphicWrapper h1{
     font-size: 41px;
-    margin-left: 11vw;
 }
 .graphicWrapper h2{
     font-family: Compendium;
@@ -205,7 +204,7 @@ body{
     margin-top: 0;
 }
 .decale{
-    margin-left: 18vw !important;
+    margin-left: 15vw !important;
 }
 
 .aProposDeMoi{ 
@@ -263,7 +262,7 @@ body{
 .creativeApprochH2{
     position: absolute;
     text-align: left;
-    margin-right: 1vw;
+    margin-left: 3vw;
     z-index: 11;
     right: 11vw;
     margin-top: 0 !important;
