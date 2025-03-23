@@ -26,6 +26,7 @@ export default function MollyProject() {
           'palette chromatique et motifs graphiques audacieux.',
           'packaging modélisé et maquetté (Adobe Suite).',
         ],
+        defi: 'alier créativité audacieuse et viabilité commerciale.',
         result: 'une marque immersive, prête à captiver son public.',
         images: [molly1, molly2, molly3, molly4, molly5],
       };

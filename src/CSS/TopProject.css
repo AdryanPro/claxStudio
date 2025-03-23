@@ -1,7 +1,10 @@
+.topProjectWrapper{
+    overflow-x: hidden;
+}
 .headerComponent {
     margin-top: 8vh;
     margin-left: 4vw;
-    margin-bottom: 22vh;
+    margin-bottom: 18vh;
 }
 
 .topProjecth2 {
@@ -16,11 +19,13 @@
     display: flex;
     align-items: flex-start;
     margin-left: 4vw;
+    height: 100vh;
+    min-width: 80vw;
     gap: 40px;
 }
 
 .sideTextWrapperLeft {
-    max-width: 50vw;
+    min-width: 39vw;
 }
 
 .sideTextH2 {
@@ -44,7 +49,14 @@
 }
 
 .resultaPushTop {
-    margin-top: 15vh; /* Reset margin-top */
+    margin-top: 22vh; /* Reset margin-top */
+}
+
+.defiWrapper {
+    position: absolute;
+    left: 82vw;
+    margin-right: -80vw;
+    min-width: 40vw; /* Adjust width as needed */
 }
 
 .imgRandomMix {
@@ -52,9 +64,11 @@
     justify-content: end;
     gap: 21px;
     position: relative;
-    margin-top: 11vh;
+    margin-top: 23vh;
     width: 100%; /* Allow the container to size based on content */
+    max-height: fit-content;
     overflow: hidden; /* Hide overflow during animation */
+    z-index: 1000;
 }
 
 .imgRandomMix img {
@@ -97,6 +111,17 @@
     }
     .imgRandomMix{
         margin-top: 25vh;
+        min-width: fit-content;
+    }
+    .imgRandomMix img{
+        width: 190px;
+    }
+    .defiWrapper {
+        position: absolute;
+        left: 76vw;
+    }
+    .resultaPushTop{
+        margin-top: 15vh;
     }
 }
 @media only screen 
@@ -109,5 +134,12 @@
     }
     .imgRandomMix{
         margin-top: 25vh;
+    }
+    .defiWrapper {
+        position: absolute;
+        left: 76vw;
+    }
+    .resultaPushTop{
+        margin-top: 6vh;
     }
 }
