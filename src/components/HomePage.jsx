@@ -89,10 +89,10 @@ export default function HomePage() {
                 <ul>
                     <Link to='/'><li>home</li></Link>
                     <Link to='/WorksNav' ><li>works</li></Link>
-                    <a href=""><li>profil</li></a>
+                    <a href="#go"><li>profil</li></a>
                 </ul>
         </nav>
-        <section className='graphicWrapper' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
+        <section className='graphicWrapper' id='go' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">GRAPHIC DESIGNER & ART DIRECTOR</h1>
             <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">

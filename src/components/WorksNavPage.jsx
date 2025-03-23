@@ -1,15 +1,16 @@
 import React from 'react'
 import "../CSS/worksPage.css"
 import { Link } from 'react-router-dom'
+
 export default function WorksNavPage() {
   return (
     <div className='worksPageWrapper'>
         <ul>
             <Link to='/Molly'>
-            <li><span>(01)</span> MOOLY :</li>
+            <li><span>(01)</span> MOLLY :</li>
             <p>Création de marque.</p></Link>
 
-            <Link href="">
+            <Link to="/Miscible">
             <li><span>(02)</span>MISCIBLE :</li>
             <p>Design écoresponsable et luxe.</p></Link>
 

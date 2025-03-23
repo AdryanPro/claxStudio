@@ -3,8 +3,9 @@ import HomePage from './components/HomePage'
 import "./App.css"
 import WorksNavPage from './components/WorksNavPage'
 import MollyProject from './components/MollyProject'
-function App() {
+import MisciblePage from './components/MisciblePage'
 
+function App() {
 
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/WorksNav' element={<WorksNavPage />}/>
         <Route path='/Molly' element={<MollyProject />}/>
+        <Route path='/Miscible' element={<MisciblePage />}/>
         {/* <Route path='*' element={<Error />}/> */}
       </Routes>
     </>

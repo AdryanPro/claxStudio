@@ -54,7 +54,7 @@
 
 .defiWrapper {
     position: absolute;
-    left: 82vw;
+    left: 80vw;
     margin-right: -80vw;
     min-width: 40vw; /* Adjust width as needed */
 }
@@ -118,7 +118,7 @@
     }
     .defiWrapper {
         position: absolute;
-        left: 76vw;
+        left: 74vw;
     }
     .resultaPushTop{
         margin-top: 15vh;
