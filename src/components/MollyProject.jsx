@@ -5,7 +5,15 @@ import molly2 from '../assets/mollyProject/molly2.png';
 import molly3 from '../assets/mollyProject/molly3.png';
 import molly4 from '../assets/mollyProject/molly4.png';
 import molly5 from '../assets/mollyProject/molly5.png';
+import img1 from '../assets/mollyProject/2emeSection/1.png'
+import img2 from '../assets/mollyProject/2emeSection/2.png'
+import img3 from '../assets/mollyProject/2emeSection/3.png'
+import img4 from '../assets/mollyProject/2emeSection/4.png'
+import img5 from '../assets/mollyProject/2emeSection/5.png'
+import img6 from '../assets/mollyProject/2emeSection/6.png'
 import '../CSS/mollyPage.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function MollyProject() {
     const projectData = {
@@ -21,12 +29,18 @@ export default function MollyProject() {
         result: 'une marque immersive, prête à captiver son public.',
         images: [molly1, molly2, molly3, molly4, molly5],
       };
-
+      AOS.init();
   return (
     <div className='mollyProjectWrapper'>
         <TopProject {...projectData} />
+        {/* data-aos="fade-up" data-aos-duration="3000" */}
         <section className="mollyImgWrapperSection">
-            <h1>JUST SO WE CAN TEST THE SCROLL</h1>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img1} alt=""  className='img1'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img2} alt="" className='img2'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img3} alt="" className='img3'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img5} alt="" className='img5'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img4} alt="" className='img4'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img6} alt="" className='img6'/>
         </section>
     </div>
   )

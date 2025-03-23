@@ -1,6 +1,89 @@
 .mollyImgWrapperSection{
-    min-height: 137vh;
+    min-height: 140vh;
+    margin-top: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    margin-bottom: 10vh;
+}
+
+.mollyImgWrapperSection img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+.img1{
+    margin-top: 33vh;
+    margin-left: 9vw;
+}
+.img2{
+    margin-left: 12vw;
+}
+.img3{
+    margin-top: 53vh;
+    margin-bottom: -10vh;
+}
+.img4{
+    margin-left: -19vw;
+    margin-bottom: 21vh;
+    margin-top: -21vh;
+}
+.img5{
+    margin-left: 15vw;
+    margin-top: 11vh;
+}
+.img6{
+    margin-right: 39vw;
+}
+/* .mollyImgWrapperSection img {
+    border: 2px solid red; /* Red border around all images */
+} */
+
+/* mac 13 pouces */
+@media only screen 
+  and (min-width: 1280px) 
+  and (max-width: 1440px) {
+    .img1{
+        margin-top: 33vh;
+        margin-left: -3vw;
+    }
+    .img2{
+        margin-left: 22vw;
+    }
+    .img3{
+        margin-top: 53vh;
+        margin-left: 8vw;
+        margin-bottom: -10vh;
+    }
+    .img4{
+        margin-left: -16vw;
+        margin-bottom: 21vh;
+        margin-top: -21vh;
+    }
+    .img5{
+        margin-left: 6vw;
+        margin-top: 11vh;
+    }
+    .img6{
+        margin-top: 9vh;
+        margin-right: 27vw;
+    }
+}
+@media only screen 
+  and (min-device-width: 2560px) 
+  and (max-device-width: 2560px) 
+  and (min-device-height: 1600px) 
+  and (max-device-height: 1600px) {
+    .headerComponent{
+        margin-bottom: 12vh;
+    }
+    .imgRandomMix{
+        margin-top: 25vh;
+    }
 }
