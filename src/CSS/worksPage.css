@@ -1,0 +1,21 @@
+.worksPageWrapper{
+    margin-top: 9vh;
+    margin-left: 11vh;
+}
+.worksPageWrapper a{
+    text-decoration: none;
+    color: black;
+}
+.worksPageWrapper span{
+    margin-right: 2vw;
+}
+.worksPageWrapper ul li{
+    font-size: 2rem;
+    list-style: none;
+}
+.worksPageWrapper p{
+    margin: 0;
+    margin-left: 4.3vw;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+}
