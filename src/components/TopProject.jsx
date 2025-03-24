@@ -65,7 +65,7 @@ const TopProject = ({
             >
             <h1 className="topProjecth1">{title}</h1>
             <h2 className="topProjecth2">{subtitle}</h2>
-            <span>({projectNumber})</span>
+            <span className='numberProjet'>({projectNumber})</span>
             </motion.header>
         
             {/* Wrap sideTextWrapperLeft, defiWrapper, and imgRandomMix in a flex container */}

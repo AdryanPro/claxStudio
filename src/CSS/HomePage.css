@@ -37,11 +37,11 @@ body{
     margin-left: 12vw;
     margin-top: 6vh;
     font-size: 2rem;
+    font-weight: bold;
 }
 .h2HomePage{
     margin-left: 20vw;
     font-size: 2rem;
-
 }
 .carouselTitle{
     text-align: right;

@@ -8,14 +8,25 @@
     margin-left: 4vw;
     margin-bottom: 18vh;
 }
-
+.topProjecth1{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .topProjecth2 {
     font-family: 'Compendium', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 2.3rem;
     margin-left: 8vw;
 }
-
+.topProjectWrapper p{
+    text-transform: lowercase;
+}
+.headerComponent span{
+    font-weight: bold !important;
+}
+.numberProjet{
+    font-weight: bold !important;
+}
 /* Container for sideTextWrapperLeft and imgRandomMix */
 .contentWrapper {
     display: flex;
