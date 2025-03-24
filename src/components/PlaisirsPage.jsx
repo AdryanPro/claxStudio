@@ -36,12 +36,12 @@ export default function PlaisirsPage() {
       <TopProject {...projectData}/>
       <section className="displayPlaisirImg">
         <div className="imgPlaisirWrapper">
-          <img data-aos="flip-left" data-aos-duration="2000" src={plaisir1} alt="" className='plaisirImg1'/>
-          <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="300" src={plaisir2} alt="" className='plaisirImg2'/>
-          <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="400" src={plaisir3} alt="" className='plaisirImg3'/>
-          <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="500" src={plaisir4} alt="" className='plaisirImg4'/>
-          <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="600" src={plaisir5} alt="" className='plaisirImg5'/>
-          <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="700" src={plaisir6} alt="" className='plaisirImg6'/>
+          <img data-aos="flip-right" data-aos-duration="2000" src={plaisir1} alt="" className='plaisirImg1'/>
+          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300" src={plaisir2} alt="" className='plaisirImg2'/>
+          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="400" src={plaisir3} alt="" className='plaisirImg3'/>
+          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" src={plaisir4} alt="" className='plaisirImg4'/>
+          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600" src={plaisir5} alt="" className='plaisirImg5'/>
+          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="700" src={plaisir6} alt="" className='plaisirImg6'/>
         </div>
       </section>
     </div>
