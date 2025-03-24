@@ -1,0 +1,10 @@
+.displayPlaisirImg{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPlaisirWrapper{
+    display: flex;
+    gap: 6px;
+}

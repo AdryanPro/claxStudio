@@ -13,7 +13,7 @@ import img5 from '../assets/mollyProject/2emeSection/5.png'
 import img6 from '../assets/mollyProject/2emeSection/6.png'
 import '../CSS/mollyPage.css'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
 export default function MollyProject() {
     const projectData = {

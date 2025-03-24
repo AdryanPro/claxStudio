@@ -1,8 +1,5 @@
 .mollyImgWrapperSection{
     min-height: 140vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns */
     gap: 20px; /* Space between items */

@@ -5,6 +5,12 @@ import k2 from "../assets/Kiloutou/k2.png"
 import k3 from "../assets/Kiloutou/k3.png"
 import k4 from "../assets/Kiloutou/k4.png"
 import k5 from "../assets/Kiloutou/k5.png"
+import imgGauche from "../assets/Kiloutou/GrosGauche.png"
+import imgDroite1 from "../assets/Kiloutou/DroiteHaut.png"
+import imgDroite2 from "../assets/Kiloutou/DroiteBas.png"
+import mascotte from "../assets/Kiloutou/Mascotte.png"
+import '../CSS/Kiloutou.css'
+import AOS from 'aos';
 
 export default function KiloutouPage() {
   const projectData = {
@@ -21,9 +27,20 @@ export default function KiloutouPage() {
     result: "Une campagne qui renforce l'image de Kiloutou comme partenaire des artisans, avec une mascotte devenue emblématique.",
     images: [k1, k2, k3, k4, k5],
   };
+  AOS.init();
   return (
     <div>
       <TopProject {...projectData} />
+      <section className="kiloutouDisplayImg">
+        <div className="kiloutoutouGrid">
+          <img src={imgGauche} alt="" className="left-img" />
+          <div className="right-images">
+            <img src={imgDroite1} alt="" />
+            <img src={imgDroite2} alt="" />
+          </div>
+        </div>
+        <img data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" src={mascotte} alt="" className='mascotteKiloutou'/>
+      </section>
     </div>
   )
 }

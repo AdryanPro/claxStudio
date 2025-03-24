@@ -1,5 +1,6 @@
 .topProjectWrapper{
     overflow-x: hidden;
+    max-width: fit-content;
 }
 .headerComponent {
     margin-top: 8vh;
@@ -22,6 +23,7 @@
     height: 100vh;
     min-width: 80vw;
     gap: 40px;
+    overflow-x: hidden;
 }
 
 .sideTextWrapperLeft {
@@ -124,7 +126,10 @@
         max-width: 280px;
     }
     .resultaPushTop{
-        margin-top: 9vh;
+        margin-top: 6vh;
+    }
+    .topProjecth2{
+        margin-left: 12vw;
     }
 }
 @media only screen 

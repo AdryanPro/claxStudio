@@ -5,6 +5,15 @@ import pe2 from "../assets/Plaisir/pe2.png"
 import pe3 from "../assets/Plaisir/pe3.png"
 import pe4 from "../assets/Plaisir/pe4.png"
 import pe5 from "../assets/Plaisir/pe5.png"
+import plaisir1 from "../assets/Plaisir/plaisir1.png"
+import plaisir2 from "../assets/Plaisir/plaisir2.png"
+import plaisir3 from "../assets/Plaisir/plaisir3.png"
+import plaisir4 from "../assets/Plaisir/plaisir4.png"
+import plaisir5 from "../assets/Plaisir/plaisir5.png"
+import plaisir6 from "../assets/Plaisir/plaisir6.png"
+import "../CSS/plaisir.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function PlaisirsPage() {
   const projectData = {
@@ -21,9 +30,20 @@ export default function PlaisirsPage() {
     result: " Une série de photographies immersives, prêtes à inspirer des événements ou des productions contemporaines.",
     images: [pe1, pe2, pe3, pe4, pe5],
   };
+  AOS.init();
   return (
     <div>
       <TopProject {...projectData}/>
+      <section className="displayPlaisirImg">
+        <div className="imgPlaisirWrapper">
+          <img data-aos="flip-up" data-aos-duration="2000" src={plaisir1} alt="" className='plaisirImg1'/>
+          <img data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300" src={plaisir2} alt="" className='plaisirImg2'/>
+          <img data-aos="flip-up" data-aos-duration="2000" data-aos-delay="400" src={plaisir3} alt="" className='plaisirImg3'/>
+          <img data-aos="flip-up" data-aos-duration="2000" data-aos-delay="500" src={plaisir4} alt="" className='plaisirImg4'/>
+          <img data-aos="flip-up" data-aos-duration="2000" data-aos-delay="600" src={plaisir5} alt="" className='plaisirImg5'/>
+          <img data-aos="flip-up" data-aos-duration="2000" data-aos-delay="700" src={plaisir6} alt="" className='plaisirImg6'/>
+        </div>
+      </section>
     </div>
   )
 }

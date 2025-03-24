@@ -5,6 +5,7 @@ import e2 from "../assets/Ethereal/e2.png"
 import e3 from "../assets/Ethereal/e3.png"
 import e4 from "../assets/Ethereal/e4.png"
 import e5 from "../assets/Ethereal/e5.png"
+import "../CSS/Ethereal.css"
 
 export default function EtherealDesignePage() {
     const projectData = {
@@ -24,6 +25,16 @@ export default function EtherealDesignePage() {
   return (
     <div>
         <TopProject {...projectData} />
+        <div className="displayEtherealImg">
+          <div class="wrapper">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+          </div>
+        </div>
     </div>
   )
 }

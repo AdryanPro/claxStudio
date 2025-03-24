@@ -5,6 +5,10 @@ import i2 from "../assets/Italians/i2.png"
 import i3 from "../assets/Italians/i3.png"
 import i4 from "../assets/Italians/i4.png"
 import i5 from "../assets/Italians/i5.png"
+import gauche from "../assets/Italians/gauche.png"
+import droite from "../assets/Italians/droite.png"
+import "../CSS/Italians.css"
+import AOS from 'aos';
 
 export default function ItaliansDoItBetterPage() {
   const projectData = {
@@ -22,9 +26,14 @@ export default function ItaliansDoItBetterPage() {
     result: "Une affiche immersive qui incarne l'élégance et la joie de vivre italiennes, prête à captiver son public.",
     images: [i1, i2, i3, i4, i5],
   };
+  AOS.init();
   return (
     <div>
       <TopProject {...projectData} />
+      <section className="italianDisplayWrapper">
+      <img data-aos="zoom-in-right" data-aos-duration="2000" src={gauche} alt="" />
+      <img data-aos="zoom-in-left" data-aos-duration="2000" src={droite} alt="" />
+      </section>
     </div>
   )
 }

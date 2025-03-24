@@ -8,8 +8,12 @@
 }
 .worksPageWrapper span{
     margin-right: 2vw;
+    font: 1000;
+
 }
 .worksPageWrapper ul li{
+    font-family: 'FormaDJRDisplay-Regular', sans-serif;
+    font-weight: 900 !important;
     font-size: 2rem;
     list-style: none;
 }
@@ -18,4 +22,26 @@
     margin-left: 4.3vw;
     margin-bottom: 5vh;
     font-size: 2rem;
+}
+@media only screen 
+  and (min-width: 1280px) 
+  and (max-width: 1440px) {
+    .worksPageWrapper p{
+        margin: 0;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+        font-size: 2rem;
+    }
+}
+@media only screen 
+  and (min-device-width: 2560px) 
+  and (max-device-width: 2560px) 
+  and (min-device-height: 1600px) 
+  and (max-device-height: 1600px) {
+    .worksPageWrapper p{
+        margin: 0;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+        font-size: 2rem;
+    }
 }

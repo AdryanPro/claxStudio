@@ -1,0 +1,36 @@
+.kiloutouDisplayImg{
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.kiloutoutouGrid {
+    display: flex;
+    gap: 10px; /* Adjust spacing */
+    max-width: 80vw;
+  }
+  
+.left-img {
+    width: 50%; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing */
+    width: 50%; /* Adjust as needed */
+}
+
+.right-images img {
+    width: 100%;
+    object-fit: cover;
+}
+.mascotteKiloutou{
+    position: absolute;
+    bottom: 0;
+    right: -52px;
+    max-width: 42vw;
+}

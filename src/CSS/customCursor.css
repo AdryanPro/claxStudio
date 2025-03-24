@@ -1,6 +1,6 @@
 
 body {
-    cursor: none;
+    cursor: none !important;
 }
 
 /* Custom Cursor */

@@ -1,0 +1,11 @@
+.nuitDisplayImg{
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.nuitDisplayImg img{
+    width: 50%;
+}

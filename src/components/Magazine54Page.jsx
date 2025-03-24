@@ -5,6 +5,15 @@ import s2 from "../assets/Studio/s2.png"
 import s3 from "../assets/Studio/s3.png"
 import s4 from "../assets/Studio/s4.png"
 import s5 from "../assets/Studio/s5.png"
+import Bottom1 from "../assets/Studio/Bootom1.png"
+import Bottom2 from "../assets/Studio/Bottom2.png"
+import Bottom3 from "../assets/Studio/Bottom3.png"
+import Bottom4 from "../assets/Studio/Bottom4.png"
+import Bottom5 from "../assets/Studio/Bottom5.png"
+import Bottom6 from "../assets/Studio/Bottom6.png"
+import "../CSS/studioProject.css"
+import '../CSS/mollyPage.css'
+import AOS from 'aos';
 
 export default function Magazine54Page() {
   const projectData = {
@@ -21,10 +30,18 @@ export default function Magazine54Page() {
      result: "Un magazine qui capture l'essence du Studio 54 tout en explorant son impact culturel durable.",
      images: [s1, s2, s3, s4, s5],
   };
-
+  AOS.init();
   return (
-    <div>
+    <div className='Studiowrapper'>
       <TopProject {...projectData}/>
+      <section className="displayImgStudio">
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom1} alt="" className='StudioImg1' />
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom2} alt="" className='StudioImg2'/>
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom3} alt="" className='StudioImg3'/>
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom4} alt="" className='StudioImg4'/>
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom5} alt="" className='StudioImg5'/>
+        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom6} alt="" className='StudioImg6'/>
+      </section>
     </div>
   )
 }

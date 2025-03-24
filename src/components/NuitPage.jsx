@@ -5,6 +5,10 @@ import n2 from "../assets/Nuit/n2.png"
 import n3 from "../assets/Nuit/n3.png"
 import n4 from "../assets/Nuit/n4.png"
 import n5 from "../assets/Nuit/n5.png"
+import gauche from "../assets/Nuit/MainGauche.png"
+import droite from "../assets/Nuit/MainDroite.png"
+import "../CSS/nuit.css"
+import AOS from 'aos';
 
 export default function Nuit() {
   const projectData = {
@@ -22,9 +26,14 @@ export default function Nuit() {
     result: "Des couvertures qui donnent vie aux histoires, incitant les enfants à plonger dans l'univers des livres.",
     images: [n1, n2, n3, n4, n5],
   };
+  AOS.init();
   return (
     <div>
       <TopProject {...projectData} />
+      <section className="nuitDisplayImg">
+        <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" src={gauche} alt="" className='nuitImgGauche'/>
+        <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" src={droite} alt="" className='nuitImgDroite'/>
+      </section>
     </div>
   )
 }
