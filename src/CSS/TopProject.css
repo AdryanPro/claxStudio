@@ -121,7 +121,7 @@
   and (min-width: 1280px) 
   and (max-width: 1440px) {
     .headerComponent{
-        margin-bottom: 12vh;
+        margin-bottom: 9vh;
     }
     .imgRandomMix{
         margin-top: 20vh;
@@ -152,16 +152,28 @@
   and (min-device-height: 1600px) 
   and (max-device-height: 1600px) {
     .headerComponent{
-        margin-bottom: 12vh;
+        margin-bottom: 9vh;
     }
     .imgRandomMix{
-        margin-top: 25vh;
+        margin-top: 20vh;
+        min-width: fit-content;
+    }
+    .imgRandomMix img{
+        width: 190px;
     }
     .defiWrapper {
         position: absolute;
-        left: 76vw;
+        left: 75vw;
+        min-width: 320px;
+        max-width: 320px;
     }
     .resultaPushTop{
-        margin-top: 6vh;
+        margin-top: 1vh;
+    }
+    .topProjecth2{
+        margin-left: 12vw;
+    }
+    .sideTextWrapperLeft{
+        padding-left: 1vw;
     }
 }
