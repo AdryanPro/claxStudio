@@ -150,6 +150,7 @@
     }
     .worksMenuWrapper{
         bottom: 34vh;
+        font-weight: bold;
     }
 }
 @media only screen 
