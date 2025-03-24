@@ -121,10 +121,10 @@
   and (min-width: 1280px) 
   and (max-width: 1440px) {
     .headerComponent{
-        margin-bottom: 9vh;
+        margin-bottom: 3vh;
     }
     .imgRandomMix{
-        margin-top: 22vh;
+        margin-top: 30vh;
         min-width: fit-content;
     }
     .imgRandomMix img{
@@ -132,18 +132,24 @@
     }
     .defiWrapper {
         position: absolute;
-        left: 75vw;
+        left: 70vw;
         min-width: 320px;
         max-width: 320px;
     }
     .resultaPushTop{
-        margin-top: 1vh;
+        margin-top: 0;
     }
     .topProjecth2{
         margin-left: 12vw;
     }
     .sideTextWrapperLeft{
         padding-left: 1vw;
+    }
+    .contentWrapper{
+        margin-left: 3vw;
+    }
+    .worksMenuWrapper{
+        bottom: 33vh;
     }
 }
 @media only screen 
@@ -168,7 +174,7 @@
         max-width: 320px;
     }
     .resultaPushTop{
-        margin-top: 1vh;
+        margin-top: 0;
     }
     .topProjecth2{
         margin-left: 12vw;
