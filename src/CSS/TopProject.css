@@ -49,14 +49,15 @@
 }
 
 .resultaPushTop {
-    margin-top: 22vh; /* Reset margin-top */
+    margin-top: 12vh; /* Reset margin-top */
 }
 
 .defiWrapper {
     position: absolute;
     left: 80vw;
     margin-right: -80vw;
-    min-width: 40vw; /* Adjust width as needed */
+    min-width: 330px;
+    max-width: 330px;
 }
 
 .imgRandomMix {
@@ -64,7 +65,7 @@
     justify-content: end;
     gap: 21px;
     position: relative;
-    margin-top: 23vh;
+    margin-top: 19vh;
     width: 100%; /* Allow the container to size based on content */
     max-height: fit-content;
     overflow: hidden; /* Hide overflow during animation */
@@ -118,10 +119,12 @@
     }
     .defiWrapper {
         position: absolute;
-        left: 74vw;
+        left: 77vw;
+        min-width: 280px;
+        max-width: 280px;
     }
     .resultaPushTop{
-        margin-top: 15vh;
+        margin-top: 9vh;
     }
 }
 @media only screen 

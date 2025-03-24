@@ -1,12 +1,12 @@
 import React from 'react'
-import Miscible1 from "../assets/MiscibleProject/Miscible1.png"
-import Miscible2 from "../assets/MiscibleProject/Miscible2.png"
-import Miscible3 from "../assets/MiscibleProject/Miscible3.png"
-import Miscible4 from "../assets/MiscibleProject/Miscible4.png"
-import Miscible5 from "../assets/MiscibleProject/Miscible5.png"
-import TopProject from './TopProject'
-import '../CSS/Miscible.css'
-export default function MisciblePage() {
+import TopProject from './TopProject';
+import e1 from "../assets/Ethereal/e1.png"
+import e2 from "../assets/Ethereal/e2.png"
+import e3 from "../assets/Ethereal/e3.png"
+import e4 from "../assets/Ethereal/e4.png"
+import e5 from "../assets/Ethereal/e5.png"
+
+export default function EtherealDesignePage() {
     const projectData = {
         title: 'Architecture adaptative par IA',
         subtitle: 'Ethereal Design',
@@ -19,18 +19,11 @@ export default function MisciblePage() {
         ],
         defi: " Pousser les limites de la créativité assistée par IA tout en maintenant une cohérence architecturale et fonctionnelle.",
         result: "Une série de concepts visuels percutants, ouvrant de nouvelles perspectives pour l'architecture durable et adaptative.",
-        images: [Miscible1, Miscible2, Miscible3, Miscible4, Miscible5],
+        images: [e1, e2, e3, e4, e5],
       };
   return (
     <div>
         <TopProject {...projectData} />
-        <section className="displayMiscible">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </section>
     </div>
   )
 }
