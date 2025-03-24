@@ -19,7 +19,7 @@ function App() {
     <GlobalCursor />
       <Routes>
         <Route path='/' element={<HomePage />}/>
-        <Route path='/WorksNav' element={<WorksNavPage />}/>
+        <Route path='/WorksMenu' element={<WorksNavPage />}/>
         <Route path='/Molly' element={<MollyProject />}/>
         <Route path='/Miscible' element={<MisciblePage />}/>
         <Route path='/EtherealDesigne' element={<EtherealDesignePage />}/>

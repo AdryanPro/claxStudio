@@ -88,7 +88,7 @@ export default function HomePage() {
         <nav className='fiNavBar'>
                 <ul>
                     <Link to='/'><li>home</li></Link>
-                    <Link to='/WorksNav' ><li>works</li></Link>
+                    <Link to='/WorksMenu' ><li>works</li></Link>
                     <a href="#go"><li>profil</li></a>
                 </ul>
         </nav>

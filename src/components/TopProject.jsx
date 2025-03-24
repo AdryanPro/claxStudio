@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import '../CSS/TopProject.css';
+import { Link } from 'react-router-dom';
 
 const TopProject = ({
   title,
@@ -115,6 +116,10 @@ const TopProject = ({
                 ))}
             </motion.section>
             </div>
+            <div className="worksMenuWrapper">
+                <Link to="/WorksMenu">Works</Link>
+            </div>
+            
         </div>
     );
 };
