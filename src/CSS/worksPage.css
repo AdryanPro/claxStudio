@@ -14,14 +14,14 @@
 .worksPageWrapper ul li{
     font-family: 'FormaDJRDisplay-Regular', sans-serif;
     font-weight: 900 !important;
-    font-size: 2rem;
+    font-size: 1.6rem;
     list-style: none;
 }
 .worksPageWrapper p{
     margin: 0;
     margin-left: 4.3vw;
     margin-bottom: 5vh;
-    font-size: 2rem;
+    font-size: 1rem !important;
 }
 @media only screen 
   and (min-width: 1280px) 
