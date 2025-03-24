@@ -132,15 +132,18 @@
     }
     .defiWrapper {
         position: absolute;
-        left: 77vw;
-        min-width: 280px;
-        max-width: 280px;
+        left: 75vw;
+        min-width: 320px;
+        max-width: 320px;
     }
     .resultaPushTop{
-        margin-top: 6vh;
+        margin-top: 1vh;
     }
     .topProjecth2{
         margin-left: 12vw;
+    }
+    .sideTextWrapperLeft{
+        padding-left: 1vw;
     }
 }
 @media only screen 
