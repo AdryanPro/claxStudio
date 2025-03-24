@@ -117,7 +117,7 @@ const TopProject = ({
             </motion.section>
             </div>
             <div className="worksMenuWrapper">
-                <Link to="/WorksMenu">Works</Link>
+                <Link to="/WorksMenu">works</Link>
             </div>
             
         </div>
