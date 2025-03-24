@@ -10,7 +10,7 @@ export default function EtherealDesignePage() {
     const projectData = {
         title: 'Architecture adaptative par IA',
         subtitle: 'Ethereal Design',
-        projectNumber: '02',
+        projectNumber: '03',
         mission: "Explorer l'intelligence artificielle (MidJourney) et des prompts optimisés pour créer une série de visuels abordant des concepts architecturaux innovants.",
         realisation: [
           "processus créatif : Génération d'images, intégrant des principes de biomimétisme et des matériaux durables.",

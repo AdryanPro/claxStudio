@@ -1,7 +1,30 @@
 import React from 'react'
+import TopProject from './TopProject';
+import i1 from "../assets/Italians/i1.png"
+import i2 from "../assets/Italians/i2.png"
+import i3 from "../assets/Italians/i3.png"
+import i4 from "../assets/Italians/i4.png"
+import i5 from "../assets/Italians/i5.png"
 
 export default function ItaliansDoItBetterPage() {
+  const projectData = {
+    title: 'Affiche illustrative',
+    subtitle: 'Italians Do It Better',
+    projectNumber: '06',
+    mission: "Création d'une affiche pour célébrer l'esprit 'Italians Do It Better', en s'inspirant de l'iconique Dolce Vita italienne.",
+    realisation: [
+        "Direction artistique : Exploration visuelle de la Dolce Vita à travers des éléments symboliques.",
+        "Illustration : Création d'une composition riche en détails.",
+        "Palette chromatique : Tons chauds et vibrants pour évoquer la chaleur et le luxe italien.",
+        "Typographie : Choix d'une police inspirée du design italien.",
+    ],
+    defi: "Transcender les clichés pour créer une affiche à la fois moderne et intemporelle, tout en restant fidèle à l'esprit de la marque.",
+    result: "Une affiche immersive qui incarne l'élégance et la joie de vivre italiennes, prête à captiver son public.",
+    images: [i1, i2, i3, i4, i5],
+  };
   return (
-    <div>ItaliansDoItBetterPage</div>
+    <div>
+      <TopProject {...projectData} />
+    </div>
   )
 }

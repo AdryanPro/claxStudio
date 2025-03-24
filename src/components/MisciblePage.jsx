@@ -1,26 +1,27 @@
 import React from 'react'
-import Miscible1 from "../assets/MiscibleProject/Miscible1.png"
-import Miscible2 from "../assets/MiscibleProject/Miscible2.png"
-import Miscible3 from "../assets/MiscibleProject/Miscible3.png"
-import Miscible4 from "../assets/MiscibleProject/Miscible4.png"
-import Miscible5 from "../assets/MiscibleProject/Miscible5.png"
-import TopProject from './TopProject'
+import TopProject from './TopProject';
+import m1 from "../assets/MiscibleProject/m1.png"
+import m2 from "../assets/MiscibleProject/m2.png"
+import m3 from "../assets/MiscibleProject/m3.png"
+import m4 from "../assets/MiscibleProject/m4.png"
+import m5 from "../assets/MiscibleProject/m5.png"
 import '../CSS/Miscible.css'
+
 export default function MisciblePage() {
-    const projectData = {
-        title: 'Architecture adaptative par IA',
-        subtitle: 'Ethereal Design',
-        projectNumber: '02',
-        mission: "Explorer l'intelligence artificielle (MidJourney) et des prompts optimisés pour créer une série de visuels abordant des concepts architecturaux innovants.",
-        realisation: [
-          "processus créatif : Génération d'images, intégrant des principes de biomimétisme et des matériaux durables.",
-          "technologie : Utilisation avancée de MidJourney pour affiner les rendus et explorer des styles variés (futuriste, organique, minimaliste).",
-          "adaptabilité : Conception de structures modulaires et évolutives, réagissant aux conditions climatiques et topographiques.",
-        ],
-        defi: " Pousser les limites de la créativité assistée par IA tout en maintenant une cohérence architecturale et fonctionnelle.",
-        result: "Une série de concepts visuels percutants, ouvrant de nouvelles perspectives pour l'architecture durable et adaptative.",
-        images: [Miscible1, Miscible2, Miscible3, Miscible4, Miscible5],
-      };
+  const projectData = {
+    title: 'CRÉATION DE MARQUE',
+    subtitle: 'Miscible',
+    projectNumber: '02',
+    mission: "Concevoir une identité visuelle et un packaging premium, en adéquation avec les valeurs de durabilité et de sophistication.",
+    realisation: [
+        "Identité visuelle : Typographie customisée, palette chromatique neutre, design épuré.",
+        "Packaging : Flacons en verre soufflé, sachets de recharge en papier recyclé certifié FSC, finitions soft touch mat et embossage du logo.",
+        "Expérience utilisateur : Optimisation de l'ergonomie des contenants et des systèmes de recharge.",
+    ],
+    defi: " Allier les contraintes techniques de l'écoresponsabilité (matériaux recyclés, processus de production durable) avec les exigences du luxe (toucher premium, esthétique raffinée).",
+    result: "Une marque qui redéfinit le luxe moderne, avec une identité visuelle et tactile cohérente, prête à séduire un public exigeant.",
+    images: [m1, m2, m3, m4, m5],
+  };
   return (
     <div>
         <TopProject {...projectData} />

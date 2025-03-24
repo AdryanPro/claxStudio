@@ -24,4 +24,10 @@
 }
 body{
     font-family: 'FormaDJRDisplay-Regular', sans-serif;
+    /* pointer-events: none; */
+    cursor: none;
+}
+/* Hide the default cursor on interactive elements */
+button, a, input, textarea, select, label {
+    cursor: none;
 }
