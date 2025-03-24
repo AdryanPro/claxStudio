@@ -152,7 +152,7 @@ body{
 .fiNavBar {
     width: auto;
     background-color: rgba(255, 255, 255, 0.9);
-    margin-right: 3vw;
+    margin-right: 6vw;
     margin-bottom: 19vh;
     margin-top: 0;
 }
@@ -301,3 +301,23 @@ body{
     padding-bottom: 0;
     min-height: 34px;
 }
+
+/* @media only screen 
+  and (min-width: 1280px) 
+  and (max-width: 1440px) {
+    .fiNavBar{
+        margin
+    }
+}
+@media only screen 
+  and (min-device-width: 2560px) 
+  and (max-device-width: 2560px) 
+  and (min-device-height: 1600px) 
+  and (max-device-height: 1600px) {
+    .worksPageWrapper p{
+        margin: 0;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+        font-size: 2rem;
+    }
+} */
