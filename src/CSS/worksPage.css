@@ -48,3 +48,12 @@
         font-size: 2rem;
     }
 }
+
+.worksMenuWrapperOnWorksPage{
+    /* display: flex;
+    justify-content: end;
+    margin-right: 4vw; */
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+}

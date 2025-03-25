@@ -38,7 +38,13 @@ export default function WorksNavPage() {
           <li><span>(08)</span>KILOUTOU :</li>
           <p>Campagne 360°</p></Link>
       </ul>
-      
+      <div className="worksMenuWrapperOnWorksPage">
+          <Link to="/">home</Link>
+          <span className='gapForFakeNav'></span>
+          <Link to="/WorksMenu">works</Link>
+          <span className='gapForFakeNav'></span>
+          <Link to="/#go">profil</Link>
+      </div>
     </div>
   )
 }
