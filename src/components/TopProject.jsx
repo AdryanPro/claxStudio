@@ -56,6 +56,9 @@ const TopProject = ({
 
     return (
         <div className="topProjectWrapper">
+            <div className="portfolioHome">
+                <Link to='/'><p>(portfolio)</p></Link>
+            </div>
             <motion.header
             className="headerComponent"
             style={{
@@ -117,7 +120,11 @@ const TopProject = ({
             </motion.section>
             </div>
             <div className="worksMenuWrapper">
+                <Link to="/">home</Link>
+                <span className='gapForFakeNav'></span>
                 <Link to="/WorksMenu">works</Link>
+                <span className='gapForFakeNav'></span>
+                <Link to="/#go">profil</Link>
             </div>
             
         </div>

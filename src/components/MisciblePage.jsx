@@ -27,6 +27,15 @@ export default function MisciblePage() {
         <TopProject {...projectData} />
         <section className="displayMiscible">
           {/* Loader */}
+          <div class="wrapper">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+              <div class="shadow"></div>
+          </div>
+          
         <div class="main">
           <div class="dog">
             <div class="dog__paws">

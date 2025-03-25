@@ -72,7 +72,9 @@ body{
 .carouselTrack:hover {
     animation-play-state: paused;
 }
-
+.carouselTrack a{
+    color: black;
+}
 /* 🚀 Each Card */
 .carouselCard {
     position: relative;
@@ -165,7 +167,7 @@ body{
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    gap: 21px;
+    gap: 60px;
 }
 
 /* Navigation List Items */

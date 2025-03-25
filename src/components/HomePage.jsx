@@ -13,7 +13,7 @@ import colored4 from '../assets/carousel/colored4.png';
 import colored5 from '../assets/carousel/colored5.png';
 import colored6 from '../assets/carousel/colored6.png';
 import colored7 from '../assets/carousel/colored7.png';
-
+import { useLocation } from "react-router-dom";
 import "../CSS/HomePage.css";
 import "../CSS/customCursor.css"
 import AOS from 'aos';
@@ -22,13 +22,13 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     const images = [
-        { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29" },
-        { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29" },
-        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29" },
-        { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29" },
-        { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29" },
-        { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29" },
-        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29" }
+        { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29", link: "/ItaliansDoItBetter" },
+        { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29", link: "/MagazineStudio54" },
+        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29", link: "/PlaisirÉphémères" },
+        { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29", link: "/EtherealDesigne" },
+        { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29", link: "/Miscible" },
+        { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29", link: "/Molly" },
+        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée" }
     ];
     const [cursorColor, setCursorColor] = useState('black'); // Default color
     const cursorRef = useRef(null); // Ref for the cursor element
@@ -52,6 +52,16 @@ export default function HomePage() {
         setCursorColor(color === 'black' ? 'white' : 'black');
     };
     AOS.init();
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [location]);
   return (
     <div>
     <div className="custom-cursor" ref={cursorRef} style={{ backgroundColor: cursorColor }}></div>
@@ -63,25 +73,25 @@ export default function HomePage() {
             <h2 className='carouselTitle coolFont'>Works</h2>
             <div className="carouselTrack">
                 {images.concat(images).map((item, index) => (
-                <div className="carouselCard" key={index}>
-                    <div className="textContainer">
-                    <p className="line1">{item.text1}</p>
-                    <p className="line2">{item.text2}</p>
-                    <p className="line3">{item.text3}</p>
-                    </div>
-                    <div className="imageWrapper">
-                    <img 
-                        src={item.src} 
-                        alt={`carousel ${index}`} 
-                        className='carouselImg defaultImg' 
-                    />
-                    <img 
-                        src={item.coloredSrc} 
-                        alt={`carousel ${index} colored`} 
-                        className='carouselImg coloredImg' 
-                    />
-                    </div>
-                </div>
+                    <Link to={item.link} key={index} className="carouselCard"> {/* Make the whole card clickable */}
+                        <div className="textContainer">
+                            <p className="line1">{item.text1}</p>
+                            <p className="line2">{item.text2}</p>
+                            <p className="line3">{item.text3}</p>
+                        </div>
+                        <div className="imageWrapper">
+                            <img 
+                                src={item.src} 
+                                alt={`carousel ${index}`} 
+                                className='carouselImg defaultImg' 
+                            />
+                            <img 
+                                src={item.coloredSrc} 
+                                alt={`carousel ${index} colored`} 
+                                className='carouselImg coloredImg' 
+                            />
+                        </div>
+                    </Link>
                 ))}
             </div>
             <nav className='fiNavBar'>
@@ -91,7 +101,7 @@ export default function HomePage() {
                     <a href="#go"><li>profil</li></a>
                 </ul>
             </nav>
-            </div>
+        </div>
 
         <section className='graphicWrapper' id='go' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">GRAPHIC DESIGNER & ART DIRECTOR</h1>
