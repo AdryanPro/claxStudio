@@ -31,8 +31,8 @@ export default function Nuit() {
     <div>
       <TopProject {...projectData} />
       <section className="nuitDisplayImg">
-        <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" src={gauche} alt="" className='nuitImgGauche'/>
-        <img data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" src={droite} alt="" className='nuitImgDroite'/>
+        <img data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" src={gauche} alt="" className='nuitImgGauche'/>
+        <img data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300" src={droite} alt="" className='nuitImgDroite'/>
       </section>
     </div>
   )
