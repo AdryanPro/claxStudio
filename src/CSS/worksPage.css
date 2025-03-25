@@ -56,4 +56,10 @@
     position: absolute;
     bottom: 2vh;
     right: 2vw;
+    text-transform: lowercase !important;
+    font-weight: bold !important;
+}
+.worksMenuWrapperOnWorksPage a{
+    text-transform: lowercase !important;
+    font-weight: bold !important;
 }
