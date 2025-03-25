@@ -20,6 +20,7 @@ import c3small1 from "../assets/Ethereal/c3img2.png"
 import c3small2 from "../assets/Ethereal/c3img3.png"
 import c3small3 from "../assets/Ethereal/c3img4.png"
 import c3small4 from "../assets/Ethereal/c3img5.png"
+import logo from "../assets/Ethereal/logo.png"
 import "../CSS/Ethereal.css"
 import AOS from 'aos';
 
@@ -54,9 +55,9 @@ export default function EtherealDesignePage() {
                 </div>
             </div>
 
-            {/* Right Section */}
-            <div className="title-section">
-                <h2 className="ethereal-title">Ethereal Design</h2>
+            {/* Right Section "ethereal-title" */}
+            <div className="title-section ">
+                <img src={logo} alt="logo" className='logo'/>
                 <div className="image-group">
                     <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c2Big} alt="Big Image 2" className="big-img" />
                     <div className="small-images">
