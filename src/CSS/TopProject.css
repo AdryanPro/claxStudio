@@ -10,9 +10,7 @@
     color: black;
     text-decoration: none;
 }
-.portfolioHome:hover{
-    transform: scale(1.2);
-}
+
 .topProjectWrapper{
     overflow-x: hidden;
     max-width: fit-content;
