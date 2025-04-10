@@ -13,6 +13,9 @@ import colored4 from '../assets/carousel/colored4.png';
 import colored5 from '../assets/carousel/colored5.png';
 import colored6 from '../assets/carousel/colored6.png';
 import colored7 from '../assets/carousel/colored7.png';
+import logo1 from '../assets/home/instaLogo.png'
+import logo2 from '../assets/home/LinkdinLogo.png'
+import logo3 from '../assets/home/cv.png'
 import { useLocation } from "react-router-dom";
 import "../CSS/HomePage.css";
 import "../CSS/customCursor.css"
@@ -65,10 +68,21 @@ export default function HomePage() {
   return (
     <div>
     <div className="custom-cursor" ref={cursorRef} style={{ backgroundColor: cursorColor }}></div>
-
-        <h1 className='h1HomePage'>CLAX STUDIO</h1>
-        <h1 className='h2HomePage coolFont'>Clax Studio</h1>
-
+        <div className="kindOfNavbarWrapper">
+            <h1 className='h1HomePage'>CLAX STUDIO</h1>
+            <h1 className='h2HomePage coolFont'>Clax Studio</h1>
+            <div className="socialBtn">
+                <a href="https://www.instagram.com/clax.studio/">
+                    <img src={logo1} alt="" />
+                </a>
+                <a href="#">
+                    <img src={logo2} alt="" />
+                </a>
+                <a href="#">
+                    <img src={logo3} alt="" />
+                </a>
+            </div>
+        </div>
         <div className="carouselWrapper">
             <h2 className='carouselTitleTop'>WORKS</h2>
             <h2 className='carouselTitle coolFont'>Works</h2>
