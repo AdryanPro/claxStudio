@@ -17,7 +17,7 @@ import { useLocation } from "react-router-dom";
 import "../CSS/HomePage.css";
 import "../CSS/customCursor.css"
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
@@ -70,6 +70,7 @@ export default function HomePage() {
         <h1 className='h2HomePage coolFont'>Clax Studio</h1>
 
         <div className="carouselWrapper">
+            <h2 className='carouselTitleTop'>WORKS</h2>
             <h2 className='carouselTitle coolFont'>Works</h2>
             <div className="carouselTrack">
                 {images.concat(images).map((item, index) => (
@@ -107,18 +108,20 @@ export default function HomePage() {
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">GRAPHIC DESIGNER & ART DIRECTOR</h1>
             <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">
-                <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>About me</h2>
                 <p className='pContainerAProposDeMoi' data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">
                     passionnée par la création visuelle et l'innovation, je mets mon expertise au service de projets variés, 
                     allant de la création de marque au design éditorial, en passant par la photographie et l'illustration. 
                     Mon approche allie rigueur technique et sensibilité artistique, avec une attention particulière portée à 
                     l'expérience utilisateur et à l'impact visuel.
                 </p>
+                <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2Top'>ABOUT ME </h2>
+                <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>About me</h2>
             </div>
 
             <div data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1000">
                 <div className="contact"> 
                     <p className='pContainerContact'> louisclarissepro@gmail.com</p>
+                    <h2 className='contactH2Top'>CONTACT</h2>
                     <h2 className='contactH2'>Contact</h2>
                 </div>
             </div>
@@ -129,10 +132,10 @@ export default function HomePage() {
                      ou une installation immersive, je m'efforce de créer des expériences visuelles
                     qui marquent les esprits et inspirent.
                 </p>
-                <h2 className='creativeApprochH2' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approch</h2>
+                <h2 className='creativeApprochH2Top' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approach</h2>
+                <h2 className='creativeApprochH2' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approach</h2>
             </div>
             <div className="keySkills" data-aos="fade-left" data-aos-delay="1800" data-aos-duration="1000">
-                <h2 className='keySkillsH2'>Key Skills</h2>
                 <ul>
                     <li data-aos="fade-left">Branding : Identité visuelle, packaging, stratégie de marque.</li>
                     <li data-aos="fade-left" data-aos-delay="1900" data-aos-duration="1000">Graphic Design : Affiches, illustrations, typographie, mise en page.</li>
@@ -140,6 +143,8 @@ export default function HomePage() {
                     <li data-aos="fade-left" data-aos-delay="2100" data-aos-duration="1000">Editorial Design : Conception de magazines, couvertures de livres, mise en page.</li>
                     <li data-aos="fade-left" data-aos-delay="2200" data-aos-duration="1000">Tools : Suite Adobe (Photoshop, Illustrator, InDesign), modélisation 3D (Nomad), prompts optimisés pour IA.</li>
                 </ul>
+                <h2 className='keySkillsH2Top'>Key Skills</h2>
+                <h2 className='keySkillsH2'>Key Skills</h2>
             </div>
         </section>
     </div>
