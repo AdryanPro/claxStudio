@@ -90,8 +90,8 @@ export default function HomePage() {
                 {images.concat(images).map((item, index) => (
                     <Link to={item.link} key={index} className="carouselCard"> {/* Make the whole card clickable */}
                         <div className="textContainer">
-                            <p className="line1">{item.text1}</p>
                             <p className="line2">{item.text2}</p>
+                            <p className="line1">{item.text1}</p>
                             <p className="line3">{item.text3}</p>
                         </div>
                         <div className="imageWrapper">
