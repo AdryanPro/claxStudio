@@ -1,3 +1,18 @@
+/* Define the Compendium font */
+@font-face {
+    font-family: 'Compendium';
+    src: url('../assets/fonts/Compendium.ttf') format('truetype'); /* .ttf format */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}   
+@font-face {
+    font-family: 'FormaDJRDisplay-Bold';
+    src: url('../assets/fonts/FormaDJRDisplay-Bold-Testing.ttf') format('truetype'); /* .ttf format */
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; /* Ensures text is visible while the font loads */
+}
 .portfolioHome{
     position: absolute;
     top: 0;
@@ -23,12 +38,35 @@
 }
 .topProjecth1{
     font-weight: bold;
+    margin-top: -4vh;
     text-transform: uppercase;
+    font-family: 'FormaDJRDisplay-Bold';
+    font-size: 24px;
+    max-width: 50%;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+a:has(.topProjecth1) {
+    text-decoration: none;
 }
 .topProjecth2 {
-    font-family: 'Compendium', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'FormaDJRDisplay-Bold';
     margin-left: 8vw;
+    text-align: right;
+    margin-right: 8vw;
+    margin-bottom: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-top: -4vh;
+}
+.topProjecth2CoolFont{
+    margin: 0;
+    text-align: right;
+    font-family: 'Compendium', sans-serif;
+    margin-right: 4vw;
+    line-height: 0;
 }
 .topProjectWrapper p{
     text-transform: lowercase;
@@ -51,17 +89,25 @@
 }
 
 .sideTextWrapperLeft {
+    margin-top: 5vh;
     min-width: 39vw;
 }
-
+.topTxtProject{
+    margin-top: 5vh !important;
+}
 .sideTextH2 {
-    font-family: 'Compendium', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+    font-family: 'FormaDJRDisplay-Bold';
 }
 
 .sideTextWrapperLeft p {
     font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 4vh;
 }
 
 .sideTextWrapperLeft ul {
@@ -91,10 +137,10 @@
     justify-content: end;
     gap: 21px;
     position: relative;
-    margin-top: 19vh;
-    width: 100%; /* Allow the container to size based on content */
+    margin-top: 22vh !important;
+    width: 100%;
     max-height: fit-content;
-    overflow: hidden; /* Hide overflow during animation */
+    overflow: hidden;
     z-index: 1000;
 }
 
@@ -105,22 +151,37 @@
 
 .fadeImage {
     opacity: 1;
-    transition: opacity 1.5s ease-in-out; /* Slower and smoother transition */
-    width: 100px; /* Set a base width for the images */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Optional: Add a slight delay to stagger the fade-in effect */
-.fadeImage:nth-child(1) { transition-delay: 0s; }
-.fadeImage:nth-child(2) { transition-delay: 0.2s; }
-.fadeImage:nth-child(3) { transition-delay: 0.4s; }
-.fadeImage:nth-child(4) { transition-delay: 0.6s; }
-
-/* Fade-out effect */
-.fadeImage.fade-out {
+    transform: scale(1);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Transition styling - applied when an image is being changed */
+  .fadeImage.transitioning {
     opacity: 0;
-    transition: opacity 1.5s ease-in-out; /* Match the fade-in duration */
-}
+    transform: scale(0.95);
+  }
+  
+  /* Keep the staggered effect but make it more subtle */
+  .imgRandomMix img:nth-child(1) { transition-delay: 0s; }
+  .imgRandomMix img:nth-child(2) { transition-delay: 0.05s; }
+  .imgRandomMix img:nth-child(3) { transition-delay: 0.1s; }
+  .imgRandomMix img:nth-child(4) { transition-delay: 0.15s; }
+  
+  /* Make sure the image container has enough space */
+  .imgRandomMix {
+    display: flex;
+    justify-content: end;
+    gap: 21px;
+    position: relative;
+    margin-top: 22vh !important;
+    width: 100%;
+    max-height: fit-content;
+    overflow: visible;
+    z-index: 1000;
+  }
 
 .empty {
     min-height: 137vh;
@@ -132,12 +193,13 @@
 .worksMenuWrapper{
     position: absolute;
     right: 12vw;
-    bottom: 42vh;
+    bottom: 29vh !important;
 }
 .worksMenuWrapper a{
     color: black;
     text-decoration: none;
     font-size: 1.25rem;
+    font-family: 'FormaDJRDisplay-Bold';
 }
 .gapForFakeNav{
     margin-inline: 2.3vw;
@@ -209,4 +271,7 @@
     .sideTextWrapperLeft{
         padding-left: 1vw;
     }
+}
+.mobileDefi{
+    display: none;
 }

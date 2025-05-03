@@ -18,6 +18,7 @@ import logo2 from '../assets/home/LinkdinLogo.png'
 import logo3 from '../assets/home/cv.png'
 import { useLocation } from "react-router-dom";
 import "../CSS/HomePage.css";
+import "../CSS/mobileHomePage.css";
 import "../CSS/customCursor.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,13 +26,13 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     const images = [
-        { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29", link: "/ItaliansDoItBetter" },
-        { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29", link: "/MagazineStudio54" },
-        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29", link: "/PlaisirÉphémères" },
-        { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29", link: "/EtherealDesigne" },
-        { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29", link: "/Miscible" },
-        { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29", link: "/Molly" },
-        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée" }
+        { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29", link: "/ItaliansDoItBetter", number: "(06)" },
+        { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29", link: "/MagazineStudio54", number: "(05)"},
+        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29", link: "/PlaisirÉphémères", number: "(04)" },
+        { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29", link: "/EtherealDesigne", number: "(03)" },
+        { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29", link: "/Miscible",number: "(02)" },
+        { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29", link: "/Molly",number: "(01)" },
+        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée",number: "(07)" }
     ];
     const [cursorColor, setCursorColor] = useState('black'); // Default color
     const cursorRef = useRef(null); // Ref for the cursor element
@@ -54,7 +55,6 @@ export default function HomePage() {
     const handleBackgroundChange = (color) => {
         setCursorColor(color === 'black' ? 'white' : 'black');
     };
-    AOS.init();
     const location = useLocation();
 
     useEffect(() => {
@@ -65,6 +65,16 @@ export default function HomePage() {
         }
       }
     }, [location]);
+
+    useEffect(() => {
+        // Disable hover effects on touch devices by adding a class to <body>
+        if (window.matchMedia('(hover: none)').matches) {
+          document.body.classList.add('no-hover');
+        } else {
+          document.body.classList.remove('no-hover');
+        }
+      }, []);
+      AOS.init();
   return (
     <div>
     <div className="custom-cursor" ref={cursorRef} style={{ backgroundColor: cursorColor }}></div>
@@ -90,6 +100,7 @@ export default function HomePage() {
                 {images.concat(images).map((item, index) => (
                     <Link to={item.link} key={index} className="carouselCard"> {/* Make the whole card clickable */}
                         <div className="textContainer">
+                            <p className='lineNumber'>{item.number}</p>
                             <p className="line2">{item.text2}</p>
                             <p className="line1">{item.text1}</p>
                             <p className="line3">{item.text3}</p>
@@ -120,7 +131,7 @@ export default function HomePage() {
 
         <section className='graphicWrapper' id='go' onMouseEnter={() => setCursorColor('white')} onMouseLeave={() => setCursorColor('black')}> {/* Change to white on hover then Revert to black on leave */}
             <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">GRAPHIC DESIGNER & ART DIRECTOR</h1>
-            <h1 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='coolFont decale'>Graphic Designer & Art Director</h1>
+            <h2 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className='graphicWrapperCoolFont coolFont decale'>Graphic Designer & Art Director</h2>
             <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="aProposDeMoi">
                 <p className='pContainerAProposDeMoi' data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000">
                     passionnée par la création visuelle et l'innovation, je mets mon expertise au service de projets variés, 
@@ -132,14 +143,6 @@ export default function HomePage() {
                 <h2 data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000"  className='aProposDeMoiH2'>About me</h2>
             </div>
 
-            <div data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1000">
-                <div className="contact"> 
-                    <p className='pContainerContact'> louisclarissepro@gmail.com</p>
-                    <h2 className='contactH2Top'>CONTACT</h2>
-                    <h2 className='contactH2'>Contact</h2>
-                </div>
-            </div>
-
             <div className="creativeApproch" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
                 <p className='creativeApprocheP'>Je crois en un design qui raconte des histoires et suscite des émotions.
                     Que ce soit à travers une affiche illustrative, un packaging écoresponsable
@@ -149,6 +152,7 @@ export default function HomePage() {
                 <h2 className='creativeApprochH2Top' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approach</h2>
                 <h2 className='creativeApprochH2' data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">Creative Approach</h2>
             </div>
+
             <div className="keySkills" data-aos="fade-left" data-aos-delay="1800" data-aos-duration="1000">
                 <ul>
                     <li data-aos="fade-left">Branding : Identité visuelle, packaging, stratégie de marque.</li>
@@ -159,6 +163,14 @@ export default function HomePage() {
                 </ul>
                 <h2 className='keySkillsH2Top'>Key Skills</h2>
                 <h2 className='keySkillsH2'>Key Skills</h2>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1000">
+                <div className="contact"> 
+                    <p className='pContainerContact'> louisclarissepro@gmail.com</p>
+                    <h2 className='contactH2Top'>CONTACT</h2>
+                    <h2 className='contactH2'>Contact</h2>
+                </div>
             </div>
         </section>
     </div>

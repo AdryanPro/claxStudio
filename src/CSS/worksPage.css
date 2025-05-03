@@ -16,19 +16,23 @@
     font: 1000;
     text-transform: uppercase !important;
 }
-.worksPageWrapper ul li{
-    font-family: 'FormaDJRDisplay-Regular', sans-serif;
+.worksPageWrapper ul{
+    margin: 0;
+}
+.worksPageWrapper ul p{
+    font-family: 'FormaDJRDisplay-Bold';
     font-weight: 900 !important;
     font-size: 1.6rem;
     list-style: none;
 }
 .worksPageWrapper p{
     margin: 0;
+    font-family: 'FormaDJRDisplay';
     margin-left: 4.3vw;
     margin-bottom: 4vh !important;
     font-size: 1.3rem !important;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
 }
 @media only screen 
   and (min-width: 1280px) 
@@ -67,6 +71,7 @@
 .worksMenuWrapperOnWorksPage a{
     text-transform: lowercase !important;
     font-weight: bold !important;
+    font-family: 'FormaDJRDisplay-Bold';
 }
 .worksRightWrapper{
     display: flex;
@@ -88,8 +93,10 @@
     font-weight: 700;
     line-height: 100%;
     padding-right: 15vw;
+    font-family: 'FormaDJRDisplay-Bold';
 }
 .h1MenuWorkCoolFont{
+    
     font-size: 6rem;
     font-family: 'Compendium', sans-serif;
     font-weight: 400;
@@ -97,3 +104,21 @@
     line-height: 0%;
     z-index: 10;
 }
+.h1MenuWorkMobile{
+    display: none;
+}
+.h1MenuWorkCoolFontMobile{
+    display: none;
+}
+.workLeftWrapper li{
+    list-style: none;
+    padding-left: 0; /* optionnel, pour retirer l'indentation */
+    margin-bottom: 2.6rem !important;
+}
+.titleWorksMenu{
+    margin-bottom: 0 !important;
+}
+.workLeftWrapper p{
+    margin-bottom: 0 !important;
+}
+
