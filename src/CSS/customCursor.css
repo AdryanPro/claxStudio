@@ -17,6 +17,13 @@ body {
     transform: translate(-50%, -50%); /* Centers the cursor */
     transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
 }
-body.custom-cursor-enabled {
-    cursor: none;
-  }
+
+@media (hover: none), (pointer: coarse) {
+    .custom-cursor {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+}
