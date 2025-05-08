@@ -57,6 +57,7 @@
         line-height: normal;
         letter-spacing: 0.32px;
         text-transform: uppercase;
+        margin-left: 14vw !important;
     } 
     .titleWorksMenu{
         color: #000;
