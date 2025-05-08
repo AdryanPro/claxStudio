@@ -25,7 +25,7 @@
         max-width: 90vw;
         position: absolute; /* Change from relative to fixed */
         left: 1rem; /* Center horizontally */
-        bottom: 80vh !important; /* Use a fixed distance from bottom */
+        bottom: 60vh !important; /* Use a fixed distance from bottom */
         display: flex;
         justify-content: space-between;
     }
