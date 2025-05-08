@@ -35,7 +35,20 @@ export default function HomePage() {
         { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée",number: "(07)" }
     ];
     const [cursorColor, setCursorColor] = useState('black'); // Default color
+    const [isTouchDevice, setIsTouchDevice] = useState(false); //Detect touch devices
     const cursorRef = useRef(null); // Ref for the cursor element
+
+    useEffect(() => {
+        const isTouch = window.matchMedia('(hover: none)').matches;
+        setIsTouchDevice(isTouch);
+      
+        if (!isTouch) {
+          document.body.classList.add('custom-cursor-enabled');
+        } else {
+          document.body.classList.remove('custom-cursor-enabled');
+        }
+      }, []);
+      
 
     useEffect(() => {
         const cursor = cursorRef.current;
