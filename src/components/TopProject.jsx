@@ -191,13 +191,16 @@ const TopProject = ({
                       </div>
         </div>
         {/* Navigation Links */}
-        <div className="worksMenuWrapper">
+        <motion.section
+            className="worksMenuWrapper"
+            style={!isMobile ? { opacity: leftOpacity, x: rightX } : {}}
+          >
           <Link to="/">home</Link>
           <span className="gapForFakeNav"></span>
           <Link to="/WorksMenu">works</Link>
           <span className="gapForFakeNav"></span>
           <Link to="/#go">profil</Link>
-        </div>
+        </motion.section>
       </div>
     );
 };
