@@ -182,6 +182,13 @@ const TopProject = ({
               ))}
             </section>
           )}
+                                <div className="worksMenuWrapperMobile">
+                        <Link to="/">home</Link>
+                        <span className="gapForFakeNav"></span>
+                        <Link to="/WorksMenu">works</Link>
+                        <span className="gapForFakeNav"></span>
+                        <Link to="/#go">profil</Link>
+                      </div>
         </div>
         {/* Navigation Links */}
         <div className="worksMenuWrapper">

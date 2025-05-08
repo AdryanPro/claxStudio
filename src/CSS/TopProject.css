@@ -205,6 +205,9 @@ a:has(.topProjecth1) {
 .gapForFakeNav{
     margin-inline: 2.3vw;
 }
+.worksMenuWrapperMobile{
+    display: none;
+}
 /* mac 13 pouces */
 @media only screen 
   and (min-width: 1280px) 
