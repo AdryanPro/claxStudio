@@ -15,7 +15,8 @@
     .worksMenuWrapper{
         min-width: 90vw;
         left: 1rem;
-        top: 150vh !important;
+        /* top: 150vh !important; */
+        bottom: 1vh;
         display: flex;
         justify-content: space-between;
     }
