@@ -183,7 +183,6 @@ const TopProject = ({
             </section>
           )}
         </div>
-    
         {/* Navigation Links */}
         <div className="worksMenuWrapper">
           <Link to="/">home</Link>
