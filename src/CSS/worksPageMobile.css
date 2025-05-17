@@ -70,8 +70,9 @@
         text-transform: uppercase;
     }
     .worksMenuWrapperOnWorksPage{
-        bottom: -9rem;
+        bottom: -17rem;
         left: 1rem;
+        padding-bottom: 3vh;
     }
     .LogoWorks{
         display: none;
@@ -82,5 +83,15 @@
     .h1MenuWorkCoolFont{
         display: none;
     }
-    
+    .h1MenuWorkMobile{
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        margin-top: 11vh;
+    }
+    .h1MenuWorkCoolFontMobile{
+        display: flex;
+        justify-content: flex-end;
+        text-align: right !important;
+    }
 }
