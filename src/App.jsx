@@ -11,12 +11,14 @@ import ItaliansDoItBetterPage from './components/ItaliansDoItBetterPage'
 import NuitPage from './components/NuitPage'
 import KiloutouPage from './components/KiloutouPage'
 import GlobalCursor from './components/GlobalCursor'
+import TopPage from './components/TopPage'
 
 function App() {
 
   return (
     <>
     <GlobalCursor />
+    <TopPage />
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/WorksMenu' element={<WorksNavPage />}/>
