@@ -362,6 +362,7 @@ body{
     text-transform: lowercase;
     text-align: left;
     margin-bottom: 1;
+    font-family: 'FormaDJRDisplay-Regular' !important;
 }
 .creativeApprochH2Top{
     font-family: 'FormaDJRDisplay-Bold' !important;

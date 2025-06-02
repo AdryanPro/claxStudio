@@ -73,7 +73,7 @@
     }
     .aProposDeMoiH2Top{
         color: #FFF;
-        font-family: "Forma DJR Display";
+        font-family: "Forma DJR Display" !important;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -97,7 +97,7 @@
     }
     .pContainerAProposDeMoi{
         color: #FFF;
-        font-family: "Forma DJR Display";
+        font-family: 'FormaDJRDisplay-Regular' !important;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -120,7 +120,7 @@
         margin: 0;
         padding: 0;
         color: #FFF;
-        font-family: "Forma DJR Display";
+        font-family: 'FormaDJRDisplay-Regular' !important;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -132,7 +132,7 @@
     }
     .creativeApprochH2Top{
         color: #FFF;
-        font-family: "Forma DJR Display";
+        font-family: 'Forma DJR Display' !important;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;

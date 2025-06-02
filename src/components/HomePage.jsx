@@ -95,13 +95,13 @@ export default function HomePage() {
             <h1 className='h1HomePage'>CLAX STUDIO</h1>
             <h1 className='h2HomePage coolFont'>Clax Studio</h1>
             <div className="socialBtn">
-                <a href="https://www.instagram.com/clax.studio/">
+                <a href="https://www.instagram.com/clax.studio/" target="_blank" rel="noopener noreferrer">
                     <img src={logo1} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/clarisse-louis-0a5b6a201/" target="_blank" rel="noopener noreferrer">
                     <img src={logo2} alt="" />
                 </a>
-                <a href="#">
+                <a href="/CVClarisse.pdf" target="_blank" rel="noopener noreferrer">
                     <img src={logo3} alt="" />
                 </a>
             </div>
