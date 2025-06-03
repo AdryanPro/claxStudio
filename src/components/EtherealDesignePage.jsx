@@ -5,9 +5,9 @@ import e2 from "../assets/Ethereal/e2.png"
 import e3 from "../assets/Ethereal/e3.png"
 import e4 from "../assets/Ethereal/e4.png"
 import e5 from "../assets/Ethereal/e5.png"
-import e5 from "../assets/Ethereal/e6.png"
-import e5 from "../assets/Ethereal/e7.png"
-import e5 from "../assets/Ethereal/e8.png"
+import e6 from "../assets/Ethereal/e6.png"
+import e7 from "../assets/Ethereal/e7.png"
+import e8 from "../assets/Ethereal/e8.png"
 import c1Big from "../assets/Ethereal/c1img1.png"
 import c1small1 from "../assets/Ethereal/c1img2.png"
 import c1small2 from "../assets/Ethereal/c1img3.png"
@@ -40,7 +40,7 @@ export default function EtherealDesignePage() {
         ],
         defi: " Pousser les limites de la créativité assistée par IA tout en maintenant une cohérence architecturale et fonctionnelle.",
         result: "Une série de concepts visuels percutants, ouvrant de nouvelles perspectives pour l'architecture durable et adaptative.",
-        images: [e1, e2, e3, e4, e5],
+        images: [e1, e2, e3, e4, e5, e6, e7, e8],
       };
   AOS.init();
   return (

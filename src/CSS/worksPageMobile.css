@@ -48,17 +48,6 @@
     .workLeftWrapper p{
         margin-bottom: 0 !important;
     }
-    .subTxt{
-        color: #000;
-        font-family: "Forma DJR Display";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.32px;
-        text-transform: uppercase;
-        margin-left: 14vw !important;
-    } 
     .titleWorksMenu{
         color: #000;
         font-family: 'FormaDJRDisplay-Bold' !important;
@@ -95,3 +84,15 @@
         text-align: right !important;
     }
 }
+    .subTxt{
+        color: #000;
+        font-family: "Forma DJR Display";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        margin-left: 14vw !important;
+        color: red;
+        font-size: 5rem !important;
+    } 

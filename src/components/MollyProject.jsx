@@ -5,6 +5,7 @@ import molly2 from '../assets/mollyProject/molly2.png';
 import molly3 from '../assets/mollyProject/molly3.png';
 import molly4 from '../assets/mollyProject/molly4.png';
 import molly5 from '../assets/mollyProject/molly5.png';
+import mollyLogo from '../assets/mollyProject/2emeSection/mollyLogo.png'
 import img1 from '../assets/mollyProject/2emeSection/1.png'
 import img2 from '../assets/mollyProject/2emeSection/2.png'
 import img3 from '../assets/mollyProject/2emeSection/3.png'
@@ -36,12 +37,18 @@ export default function MollyProject() {
         <TopProject {...projectData} />
         {/* data-aos="fade-up" data-aos-duration="3000" */}
         <section className="mollyImgWrapperSection">
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img1} alt=""  className='img1'/>
+          <div className="topMolly">
+            <img data-aos="zoom-in" data-aos-duration="3000" src={mollyLogo} alt=""  className='mollyLogo'/>
             <img data-aos="zoom-in" data-aos-duration="3000" src={img2} alt="" className='img2'/>
+          </div>
+
+          <div className="bottomMolly">
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img5} alt=""  className='img5'/>
             <img data-aos="zoom-in" data-aos-duration="3000" src={img3} alt="" className='img3'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img5} alt="" className='img5'/>
             <img data-aos="zoom-in" data-aos-duration="3000" src={img4} alt="" className='img4'/>
+            <img data-aos="zoom-in" data-aos-duration="3000" src={img1} alt="" className='img1'/>
             <img data-aos="zoom-in" data-aos-duration="3000" src={img6} alt="" className='img6'/>
+          </div>
         </section>
     </div>
   )
