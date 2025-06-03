@@ -24,7 +24,6 @@ export default function WorksNavPage() {
               <p className='subTxt'>Design écoresponsable et luxe.</p></Link>
           </li>
 
-
           <li>
             <Link to="/EtherealDesigne" onClick={() => window.scrollTo(0, 0)}>
                         <p className='titleWorksMenu'><span>(03)</span>Ethereal Design :</p>

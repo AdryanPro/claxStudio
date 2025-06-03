@@ -134,9 +134,9 @@ const TopProject = ({
           <p>{mission}</p>
 
           <h2 className="sideTextH2">Réalisation</h2>
-          <ul>
+          <ul className='sideTextH2Ul'>
             {realisation.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li className='sideTextH2li' key={index}>{item}</li>
             ))}
           </ul>
 
