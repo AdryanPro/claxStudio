@@ -28,7 +28,7 @@ body{
     cursor: none;
 }
 p{
-    letter-spacing: 1px !important;
+    letter-spacing: 2.5px !important;
 }
 /* Hide the default cursor on interactive elements */
 button, a, input, textarea, select, label {

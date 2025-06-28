@@ -106,11 +106,10 @@ a:has(.topProjecth1) {
     font-family: 'FormaDJRDisplay-Bold';
 }
 li{
-    letter-spacing: 1px !important;
+    letter-spacing: 2.5px !important;
 }
 .sideTextWrapperLeft p {
     font-size: 1rem;
-    letter-spacing: 1px;
     margin-bottom: 4vh;
 }
 

@@ -1,6 +1,6 @@
 .worksPageWrapper{
     margin-top: 9vh;
-    margin-left: 11vh;
+    /* margin-left: 11vh; */
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -17,25 +17,41 @@
     text-transform: uppercase !important;
 }
 .worksPageWrapper ul{
+    min-width: 60vw;
     margin: 0;
+    padding: 0;
 }
 .worksPageWrapper ul p{
     font-family: 'FormaDJRDisplay-Bold';
     font-weight: 900 !important;
-    font-size: 1.6rem;
     list-style: none;
+}
+.worksPageWrapper ul li {
+  margin: 0;
+  padding: 0 0; /* réduit l’espace vertical */
+  line-height: 1.2; /* réduit l'interligne */
 }
 .worksPageWrapper p{
     margin: 0;
     font-family: 'FormaDJRDisplay';
     margin-left: 4.3vw;
     margin-bottom: 4vh !important;
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     text-transform: uppercase;
     font-weight: 700;
 }
-.subTxt{
-    margin-left: 8vw !important;
+.casseCouilleLesP p{
+    font-size: 100px;
+}
+.subTxtWorksMenue{
+    margin-left: 8.4vw !important;
+    font-size: 7px !important;
+}
+.invisibleSpan{
+    opacity: 0;
+}
+.LogoWorksMobile{
+    display: none;
 }
 @media only screen 
   and (min-width: 1280px) 
@@ -57,7 +73,7 @@
   and (max-device-height: 1600px) {
     .worksPageWrapper p{
         margin: 0;
-        margin-left: 5vw;
+        /* margin-left: 5vw; */
         margin-bottom: 5vh;
         font-size: 2rem;
     }
@@ -123,8 +139,8 @@
 }
 .titleWorksMenu{
     margin-bottom: 0 !important;
+    margin-left: 0;
 }
 .workLeftWrapper p{
     margin-bottom: 0 !important;
 }
-
