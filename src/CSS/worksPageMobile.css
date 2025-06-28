@@ -1,6 +1,10 @@
 @media only screen and (max-width: 1000px) {
     .workLeftWrapper{
         position: relative;
+
+    }
+    .worksPageWrapper{
+        overflow-x: hidden;
     }
     .LogoWorksMobile{
         display: block;
