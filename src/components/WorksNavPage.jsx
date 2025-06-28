@@ -9,11 +9,11 @@ export default function WorksNavPage() {
   return (
     <div className='worksPageWrapper'>
       <div className="workLeftWrapper">
-                <img src={BigCMobile} alt="Logo" className='LogoWorksMobile' />
         <h1 className='h1MenuWorkMobile'>WORKS</h1>
         <h1 className='h1MenuWorkCoolFontMobile'>Works</h1>
         {/* Supprime a partir dici */}
         <ul>
+          <img src={BigCMobile} alt="Logo" className='LogoWorksMobile' />
           <li className='casseCouilleLesP'>
             <Link to='/Molly' onClick={() => window.scrollTo(0, 0)}>
               <p className='titleWorksMenu'><span>(01)</span>MOLLY :</p>
