@@ -8,12 +8,13 @@ import BigCMobile from "../assets/menu/BigCWorksMenuMobile.png"
 export default function WorksNavPage() {
   return (
     <div className='worksPageWrapper'>
+      <img src={BigCMobile} alt="Logo" className='LogoWorksMobile' />
       <div className="workLeftWrapper">
         <h1 className='h1MenuWorkMobile'>WORKS</h1>
         <h1 className='h1MenuWorkCoolFontMobile'>Works</h1>
         {/* Supprime a partir dici */}
         <ul>
-          <img src={BigCMobile} alt="Logo" className='LogoWorksMobile' />
+        
           <li className='casseCouilleLesP'>
             <Link to='/Molly' onClick={() => window.scrollTo(0, 0)}>
               <p className='titleWorksMenu'><span>(01)</span>MOLLY :</p>

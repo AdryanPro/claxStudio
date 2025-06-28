@@ -42,6 +42,7 @@
         padding: 0;
         margin: 0;
         text-align: left;
+        min-height: 200vh; /* or a set height if needed */
     }
 
     .workLeftWrapper ul {
