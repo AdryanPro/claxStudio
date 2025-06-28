@@ -34,7 +34,7 @@
     }
     .worksPageWrapper {
         width: 100vw;
-        height: 130vh;
+        /* height: 130vh; */
         margin: 0;
         padding: 0;
         display: block; /* Not flex, if you don't want columns */
@@ -46,17 +46,17 @@
         padding: 0;
         margin: 0;
         text-align: left;
-        min-height: 200vh; /* or a set height if needed */
+        min-height: 100vh; /* or a set height if needed */
     }
 
     .workLeftWrapper ul {
         list-style: none;
-          position: relative;
-            z-index: 12;
+        position: relative;
+        z-index: 12;
         margin: 0;
         padding: 1rem;
         text-align: left;
-        min-height: 200vh; /* or a set height if needed */
+        min-height: 150vh; /* or a set height if needed */
     }
     .workLeftWrapper li{
         margin-bottom: 1.4rem;
