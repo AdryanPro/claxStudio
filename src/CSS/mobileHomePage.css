@@ -142,6 +142,7 @@
         top: 175px;
         left: 1rem;
     }
+
     .creativeApprochH2{
         color: #FFF;
         font-family: Compendium;
@@ -170,12 +171,12 @@
     }
     .keySkillsH2Top{
         position: absolute;
-        top: 300px;
+        top: 330px;
         right: 4rem;
     }
     .keySkillsH2{
         position: absolute;
-        top: 320px;
+        top: 350px;
         right: 4rem;
 
     }
