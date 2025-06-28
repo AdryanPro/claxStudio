@@ -81,7 +81,7 @@
         letter-spacing: 0.4px;
         text-transform: uppercase;
         margin: 0;
-        max-width: 100vw;
+        /* max-width: 100vw; */
         margin-top: 1rem !important; 
         margin-right: 9vw;
     }
@@ -106,15 +106,15 @@
         text-transform: lowercase;
         padding-inline: 1.3rem;
         margin: 0;
-        max-width: 90vw;
+        /* max-width: 90vw */
     }
     .creativeApproch{
         position: absolute;
         right: 0;
         top: 500px;
-        max-width: 100vw;
-        min-width: 90vw;
-        min-height: 250px;
+        /* max-width: 100vw; */
+        /* min-width: 90vw; */
+        /* min-height: 250px; */
     }
     .creativeApproch p{
         margin: 0;
@@ -171,12 +171,12 @@
     }
     .keySkillsH2Top{
         position: absolute;
-        top: 330px;
+        top: 350px;
         right: 4rem;
     }
     .keySkillsH2{
         position: absolute;
-        top: 350px;
+        top: 370px;
         right: 4rem;
 
     }
@@ -184,6 +184,7 @@
         display: block;
         position: absolute;
         top: 88vh;
+        margin-top: 22vh;
     }
     .pContainerContact{
         color: #FFF;
