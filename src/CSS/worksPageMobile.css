@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1000px) {
     .workLeftWrapper{
         position: relative;
-        overflow: hidden;
     }
     .LogoWorksMobile{
         display: block;
@@ -9,8 +8,8 @@
         min-height: 600px;
         top: 18vh;
         right: -201px;
-         pointer-events: none;
-         z-index: 1;
+        pointer-events: none;
+        z-index: 1;
     }
     .h1MenuWorkMobile{
         color: #000;

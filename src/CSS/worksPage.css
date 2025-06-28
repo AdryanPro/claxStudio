@@ -3,7 +3,6 @@
     /* margin-left: 11vh; */
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
     min-height: 90vh;
 }
 .worksPageWrapper a{
