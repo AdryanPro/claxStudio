@@ -48,7 +48,8 @@
         margin: 0;
         padding: 1rem;
         text-align: left;
-        margin-bottom: 200vh;
+        max-height: 100vh; /* or a set height if needed */
+        overflow-y: auto;  /* allows scrolling */
     }
     .workLeftWrapper li{
         margin-bottom: 1.4rem;
