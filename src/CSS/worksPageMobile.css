@@ -16,7 +16,7 @@
         font-family: 'FormaDJRDisplay-Bold';
         font-size: 36px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 700;   
         line-height: 10%;
         letter-spacing: 0.72px;
         text-align: right;
@@ -75,7 +75,7 @@
         text-transform: uppercase;
     }
     .worksMenuWrapperOnWorksPage{
-        bottom: -17rem;
+        bottom: -27rem;
         left: 1rem;
         padding-bottom: 3vh;
     }
