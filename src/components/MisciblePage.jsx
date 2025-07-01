@@ -33,14 +33,20 @@ export default function MisciblePage() {
   return (
     <div>
         <TopProject {...projectData} />
-        <section className="displayMiscible">
-          <img src={mTitle} alt="" className='mTitle'/>
-          <div className="displayMiscibleWrapperImg">
-            <img src={mDisplay1} alt="" className='mDisplay1'/>
-            <img src={mDisplay2} alt="" className='mDisplay2'/>
-            <img src={mDisplay3} alt="" className='mDisplay3'/>
-          </div>
-        </section>
+        <div className="newDivForPdf">
+          <section className="displayMiscible">
+            <img src={mTitle} alt="" className='mTitle'/>
+            <div className="displayMiscibleWrapperImg">
+              <img src={mDisplay1} alt="" className='mDisplay1'/>
+              <img src={mDisplay2} alt="" className='mDisplay2'/>
+              <img src={mDisplay3} alt="" className='mDisplay3'/>
+            </div>
+          </section>
+            <a href="/Miscible.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMiscible">
+              <span>voir l’intégralité du projet</span>
+              <span className="arrow">›</span>
+            </a>
+        </div>
     </div>
   )
 }

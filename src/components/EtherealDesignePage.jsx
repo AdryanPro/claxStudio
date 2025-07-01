@@ -31,7 +31,7 @@ import AOS from 'aos';
 
 export default function EtherealDesignePage() {
     const projectData = {
-        title: 'Architecture adaptative par IA',
+        title: 'INNOVATION ET IA',
         subtitle: 'Ethereal Design',
         projectNumber: '03',
         mission: "Explorer l'intelligence artificielle (MidJourney) et des prompts optimisés pour créer une série de visuels abordant des concepts architecturaux innovants.",
@@ -48,43 +48,49 @@ export default function EtherealDesignePage() {
   return (
     <div>
         <TopProject {...projectData} />
-        <div className="displayEtherealImg">
-            {/* Left Section */}
-                <img src={logo} alt="logo" className='logoMobile'/>
-            <div className="image-group">
-                <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c1Big} alt="Big Image 1" className="big-img" />
-                <div className="small-images">
-                    <img src={c1small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
-                    <img src={c1small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
-                    <img src={c1small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
-                    <img src={c1small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
-                </div>
-            </div>
-
-            {/* Right Section "ethereal-title" */}
-            <div className="title-section ">
-                <img src={logo} alt="logo" className='logo'/>
+        <div className="pdfWrapper">
+            <div className="displayEtherealImg">
+                {/* Left Section */}
+                    <img src={logo} alt="logo" className='logoMobile'/>
                 <div className="image-group">
-                    <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c2Big} alt="Big Image 2" className="big-img" />
+                    <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c1Big} alt="Big Image 1" className="big-img" />
                     <div className="small-images">
-                        <img src={c2small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
-                        <img src={c2small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
-                        <img src={c2small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
-                        <img src={c2small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
+                        <img src={c1small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
+                        <img src={c1small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
+                        <img src={c1small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
+                        <img src={c1small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
+                    </div>
+                </div>
+
+                {/* Right Section "ethereal-title" */}
+                <div className="title-section ">
+                    <img src={logo} alt="logo" className='logo'/>
+                    <div className="image-group">
+                        <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c2Big} alt="Big Image 2" className="big-img" />
+                        <div className="small-images">
+                            <img src={c2small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
+                            <img src={c2small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
+                            <img src={c2small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
+                            <img src={c2small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom Section */}
+                <div className="image-group">
+                    <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c3Big} alt="Big Image 3" className="big-img" />
+                    <div className="small-images">
+                        <img src={c3small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
+                        <img src={c3small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
+                        <img src={c3small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
+                        <img src={c3small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
                     </div>
                 </div>
             </div>
-
-            {/* Bottom Section */}
-            <div className="image-group">
-                <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c3Big} alt="Big Image 3" className="big-img" />
-                <div className="small-images">
-                    <img src={c3small1} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1500" alt="Small 1" />
-                    <img src={c3small2} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1700" alt="Small 2" />
-                    <img src={c3small3} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1900" alt="Small 3" />
-                    <img src={c3small4} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2100" alt="Small 4" />
-                </div>
-            </div>
+            <a href="/Ethereal.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMolly">
+                <span>voir l’intégralité du projet</span>
+                <span className="arrow">›</span>
+            </a>
         </div>
     </div>
   )

@@ -30,6 +30,14 @@
   bottom: -30vh;
   right: -18vw;
 }
+.newDivForPdf{
+  position: relative;
+}
+  .linkMiscible{
+    position: absolute;
+    bottom: 1px;
+    right: 3vw;
+  }
 @media only screen and (max-width: 1185px) {
   .displayMiscible{
     margin: 0;

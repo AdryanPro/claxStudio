@@ -38,6 +38,39 @@
     left: 25vw;
     bottom: -6vw;
 }
+.newWrappermOLLY{
+    position: relative;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+    bottom: 1px;
+    right: 3vw;
+}
+.linkMolly{
+    position: absolute;
+    position: absolute;
+    bottom: 1px;
+    right: 3vw;
+}
+.project-link span:first-child {
+  text-decoration: underline;
+}
+
+.project-link .arrow {
+  font-size: 24px;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover .arrow {
+  transform: translateX(4px);
+}
 
 /* mac 13 pouces */
 @media only screen 
@@ -108,5 +141,10 @@
         top: -70px;
         right: -9px;
         display: none;
+    }
+    .linkMolly{
+        position: absolute;
+        bottom: -880px;
+        right: 10vw;
     }
   }

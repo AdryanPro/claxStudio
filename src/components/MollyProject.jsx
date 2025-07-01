@@ -40,24 +40,27 @@ export default function MollyProject() {
     <div className='mollyProjectWrapper'>
         <TopProject {...projectData} />
         {/* data-aos="fade-up" data-aos-duration="3000" */}
-        <section className="mollyImgWrapperSection">
-          <div className="topMolly">
-            <img data-aos="zoom-in" data-aos-duration="3000" src={mollyLogo} alt=""  className='mollyLogo'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img2} alt="" className='img2'/>
-          </div>
+        <div className="newWrappermOLLY">
+          <section className="mollyImgWrapperSection">
+            <div className="topMolly">
+              <img data-aos="zoom-in" data-aos-duration="3000" src={mollyLogo} alt=""  className='mollyLogo'/>
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img2} alt="" className='img2'/>
+            </div>
 
-          <div className="bottomMolly">
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img5} alt=""  className='img5'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img3} alt="" className='img3'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img4} alt="" className='img4'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img1} alt="" className='img1'/>
-            <img data-aos="zoom-in" data-aos-duration="3000" src={img6} alt="" className='img6'/>
-          </div>
-        </section>
-        <a href="/path-to-your.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
-          <span>voir l’intégralité du projet</span>
-          <span className="arrow">›</span>
-        </a>
+            <div className="bottomMolly">
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img5} alt=""  className='img5'/>
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img3} alt="" className='img3'/>
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img4} alt="" className='img4'/>
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img1} alt="" className='img1'/>
+              <img data-aos="zoom-in" data-aos-duration="3000" src={img6} alt="" className='img6'/>
+            </div>
+            
+          </section>
+          <a href="/Molly.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMolly">
+            <span>voir l’intégralité du projet</span>
+            <span className="arrow">›</span>
+          </a>
+        </div>
     </div>
   )
 }
