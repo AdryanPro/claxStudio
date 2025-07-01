@@ -35,16 +35,16 @@
     font-family: 'FormaDJRDisplay';
     margin-left: 4.3vw;
     margin-bottom: 4vh !important;
-    font-size: 1rem !important;
+    /* font-size: 1rem !important; */
     text-transform: uppercase;
     font-weight: 700;
 }
-.casseCouilleLesP p{
-    font-size: 100px;
-}
+/* .casseCouilleLesP p{
+    font-size: 10px;
+} */
 .subTxtWorksMenue{
     margin-left: 8.4vw !important;
-    font-size: 7px !important;
+    /* font-size: 47px !important; */
 }
 .invisibleSpan{
     opacity: 0;
@@ -59,7 +59,8 @@
         margin: 0;
         margin-left: 5vw;
         margin-bottom: 5vh;
-        font-size: 2rem;
+        /* font-size: 2rem; */
+        /* font-size: 1rem; */
     }
     .subTxt{
         margin-left: 9.6vw !important;

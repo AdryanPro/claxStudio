@@ -14,7 +14,9 @@ const TopProject = ({
   defi,
   images,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
   const [displayedImages, setDisplayedImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Function to get a new set of random images
   const getRandomImages = () => {
@@ -28,7 +30,7 @@ const TopProject = ({
     return newImages;
   };
 
-  // Function to update all images at the same time
+  // Function to update all images at the same time (desktop)
   const updateAllImages = () => {
     // Add the transitioning class to all images (fade out)
     const imagesWithTransition = displayedImages.map((image) => ({
@@ -59,6 +61,13 @@ const TopProject = ({
     }, 1500); // Match the fade-out duration
   };
 
+  // Function to slide to next image (mobile)
+  const slideToNextImage = () => {
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   // Initialize the first set of images on component mount
   useEffect(() => {
     if (images && images.length > 0) {
@@ -69,15 +78,20 @@ const TopProject = ({
 
   // Set up the interval to update images every 3 seconds
   useEffect(() => {
-    const interval = setInterval(updateAllImages, 3000);
+    const interval = setInterval(() => {
+      if (isMobile) {
+        slideToNextImage();
+      } else {
+        updateAllImages();
+      }
+    }, 3000);
     return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [displayedImages]);
+  }, [displayedImages, isMobile]);
 
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-110%']);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 3]);
 
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -167,21 +181,44 @@ const TopProject = ({
         )}
 
         {/* Images */}
-        <motion.section
-          className="imgRandomMix"
-          style={!isMobile ? { x: imageX, scale: imageScale } : {}}
-        >
-          {displayedImages.map((image, index) => (
-            <img
-              key={`img-${index}-${image.src}`}
-              src={image.src}
-              alt={`Random Image ${index + 1}`}
-              className={`fadeImage ${!isMobile && image.transitioning ? 'transitioning' : ''} ${
-                !isMobile && image.appearing ? 'appearing' : ''
-              }`}
-            />
-          ))}
-        </motion.section>
+        {isMobile ? (
+          // Mobile carousel
+          <div className="imgRandomMix mobile-carousel">
+            <div 
+              className="carousel-container"
+              style={{
+                transform: `translateX(-${currentImageIndex * 100}%)`,
+                transition: 'transform 0.5s ease-in-out'
+              }}
+            >
+              {images.map((image, index) => (
+                <img
+                  key={`mobile-img-${index}`}
+                  src={image}
+                  alt={`Carousel Image ${index + 1}`}
+                  className="carousel-image"
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          // Desktop random images
+          <motion.section
+            className="imgRandomMix"
+            style={{ x: imageX, scale: imageScale }}
+          >
+            {displayedImages.map((image, index) => (
+              <img
+                key={`img-${index}-${image.src}`}
+                src={image.src}
+                alt={`Random Image ${index + 1}`}
+                className={`fadeImage ${image.transitioning ? 'transitioning' : ''} ${
+                  image.appearing ? 'appearing' : ''
+                }`}
+              />
+            ))}
+          </motion.section>
+        )}
 
         <div className="worksMenuWrapperMobile">
           <Link to="/">home</Link>

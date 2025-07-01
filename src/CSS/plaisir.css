@@ -8,3 +8,27 @@
     display: flex;
     gap: 6px;
 }
+@media only screen and (max-width: 1185px) {
+    .displayPlaisirImg {
+    padding: 1rem;
+    }
+
+    .imgPlaisirWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    }
+
+    .imgPlaisirWrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    }
+    .img2Plaisir{
+        margin-top: 8vh;
+    }
+    .plaisirEquilbre{
+        margin-top: 4vh;
+    }
+}

@@ -18,7 +18,7 @@
     .h1MenuWorkMobile{
         color: #000;
         font-family: 'FormaDJRDisplay-Bold';
-        font-size: 36px;
+        /* font-size: 36px; */
         font-style: normal;
         font-weight: 700;   
         line-height: 10%;
@@ -29,7 +29,7 @@
     .h1MenuWorkCoolFontMobile{
         color: #000;
         font-family: Compendium;
-        font-size: 36px;
+        /* font-size: 36px; */
         font-style: normal;
         font-weight: 400;
         text-align: right;
@@ -71,7 +71,7 @@
     .titleWorksMenu{
         color: #000;
         font-family: 'FormaDJRDisplay-Bold' !important;
-        font-size: 20px;
+        /* font-size: 46px; */
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -112,6 +112,5 @@
         line-height: normal;
         letter-spacing: 0.32px;
         text-transform: uppercase;
-        margin-left: 14vw !important;
-        font-size: 2px !important;
+        font-size: 1rem;
     } 

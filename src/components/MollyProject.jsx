@@ -1,10 +1,14 @@
 import React from 'react';
 import TopProject from '../components/TopProject';
-import molly1 from '../assets/mollyProject/molly1.png';
-import molly2 from '../assets/mollyProject/molly2.png';
-import molly3 from '../assets/mollyProject/molly3.png';
-import molly4 from '../assets/mollyProject/molly4.png';
-import molly5 from '../assets/mollyProject/molly5.png';
+import molly1 from '../assets/mollyProject/molly1.jpg';
+import molly2 from '../assets/mollyProject/molly2.jpg';
+import molly3 from '../assets/mollyProject/molly3.jpg';
+import molly4 from '../assets/mollyProject/molly4.jpg';
+import molly5 from '../assets/mollyProject/molly5.jpg';
+import molly6 from '../assets/mollyProject/molly6.jpg';
+import molly7 from '../assets/mollyProject/molly7.jpg';
+import molly8 from '../assets/mollyProject/molly8.jpg';
+import molly9 from '../assets/mollyProject/molly9.jpg';
 import mollyLogo from '../assets/mollyProject/2emeSection/mollyLogo.png'
 import img1 from '../assets/mollyProject/2emeSection/1.png'
 import img2 from '../assets/mollyProject/2emeSection/2.png'
@@ -29,7 +33,7 @@ export default function MollyProject() {
         ],
         defi: 'alier créativité audacieuse et viabilité commerciale.',
         result: 'une marque immersive, prête à captiver son public.',
-        images: [molly1, molly2, molly3, molly4, molly5],
+        images: [molly1, molly2, molly3, molly4, molly5, molly6, molly7, molly8, molly9],
       };
       AOS.init();
   return (

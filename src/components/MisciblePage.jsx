@@ -1,10 +1,18 @@
 import React from 'react'
 import TopProject from './TopProject';
-import m1 from "../assets/MiscibleProject/m1.png"
-import m2 from "../assets/MiscibleProject/m2.png"
-import m3 from "../assets/MiscibleProject/m3.png"
-import m4 from "../assets/MiscibleProject/m4.png"
-import m5 from "../assets/MiscibleProject/m5.png"
+import m1 from "../assets/MiscibleProject/m1.jpg"
+import m2 from "../assets/MiscibleProject/m2.jpg"
+import m3 from "../assets/MiscibleProject/m3.jpg"
+import m4 from "../assets/MiscibleProject/m4.jpg"
+import m5 from "../assets/MiscibleProject/m5.jpg"
+import m6 from "../assets/MiscibleProject/m6.jpg"
+import m7 from "../assets/MiscibleProject/m7.jpg"
+import m8 from "../assets/MiscibleProject/m8.jpg"
+import m9 from "../assets/MiscibleProject/m9.jpg"
+import mTitle from "../assets/MiscibleProject/mTitlte.png"
+import mDisplay1 from "../assets/MiscibleProject/mDisplay1.png"
+import mDisplay2 from "../assets/MiscibleProject/mDisplay2.png"
+import mDisplay3 from "../assets/MiscibleProject/mDisplay3.png"
 import '../CSS/Miscible.css'
 
 export default function MisciblePage() {
@@ -20,60 +28,18 @@ export default function MisciblePage() {
     ],
     defi: " Allier les contraintes techniques de l'écoresponsabilité (matériaux recyclés, processus de production durable) avec les exigences du luxe (toucher premium, esthétique raffinée).",
     result: "Une marque qui redéfinit le luxe moderne, avec une identité visuelle et tactile cohérente, prête à séduire un public exigeant.",
-    images: [m1, m2, m3, m4, m5],
+    images: [m1, m2, m3, m4, m5, m6, m7, m8, m9],
   };
   return (
     <div>
         <TopProject {...projectData} />
         <section className="displayMiscible">
-          {/* Loader */}
-          <div class="wrapper">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="shadow"></div>
-              <div class="shadow"></div>
-              <div class="shadow"></div>
+          <img src={mTitle} alt="" className='mTitle'/>
+          <div className="displayMiscibleWrapperImg">
+            <img src={mDisplay1} alt="" className='mDisplay1'/>
+            <img src={mDisplay2} alt="" className='mDisplay2'/>
+            <img src={mDisplay3} alt="" className='mDisplay3'/>
           </div>
-          
-        <div class="main">
-          <div class="dog">
-            <div class="dog__paws">
-              <div class="dog__bl-leg leg">
-                <div class="dog__bl-paw paw"></div>
-                <div class="dog__bl-top top"></div>
-              </div>
-              <div class="dog__fl-leg leg">
-                <div class="dog__fl-paw paw"></div>
-                <div class="dog__fl-top top"></div>
-              </div>
-              <div class="dog__fr-leg leg">
-                <div class="dog__fr-paw paw"></div>
-                <div class="dog__fr-top top"></div>
-              </div>
-            </div>
-
-            <div class="dog__body">
-              <div class="dog__tail"></div>
-            </div>
-
-            <div class="dog__head">
-              <div class="dog__snout">
-                <div class="dog__nose"></div>
-                <div class="dog__eyes">
-                  <div class="dog__eye-l"></div>
-                  <div class="dog__eye-r"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="dog__head-c">
-              <div class="dog__ear-l"></div>
-              <div class="dog__ear-r"></div>
-            </div>
-          </div>
-        </div>
-
         </section>
     </div>
   )

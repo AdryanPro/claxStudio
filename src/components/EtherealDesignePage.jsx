@@ -1,28 +1,30 @@
 import React from 'react'
 import TopProject from './TopProject';
-import e1 from "../assets/Ethereal/e1.png"
-import e2 from "../assets/Ethereal/e2.png"
-import e3 from "../assets/Ethereal/e3.png"
-import e4 from "../assets/Ethereal/e4.png"
-import e5 from "../assets/Ethereal/e5.png"
-import e6 from "../assets/Ethereal/e6.png"
-import e7 from "../assets/Ethereal/e7.png"
-import e8 from "../assets/Ethereal/e8.png"
-import c1Big from "../assets/Ethereal/c1img1.png"
-import c1small1 from "../assets/Ethereal/c1img2.png"
-import c1small2 from "../assets/Ethereal/c1img3.png"
-import c1small3 from "../assets/Ethereal/c1img4.png"
-import c1small4 from "../assets/Ethereal/c1img5.png"
+import e1 from "../assets/Ethereal/e1.jpg"
+import e2 from "../assets/Ethereal/e2.jpg"
+import e3 from "../assets/Ethereal/e3.jpg"
+import e4 from "../assets/Ethereal/e4.jpg"
+import e5 from "../assets/Ethereal/e5.jpg"
+import e6 from "../assets/Ethereal/e6.jpg"
+import e7 from "../assets/Ethereal/e7.jpg"
+import e8 from "../assets/Ethereal/e8.jpg"
+import e9 from "../assets/Ethereal/e9.jpg"
+import e10 from "../assets/Ethereal/e10.jpg"
+import c1Big from "../assets/Ethereal/c1img1.jpg"
+import c1small1 from "../assets/Ethereal/c1img2.jpg"
+import c1small2 from "../assets/Ethereal/c1img3.jpg"
+import c1small3 from "../assets/Ethereal/c1img4.jpg"
+import c1small4 from "../assets/Ethereal/c1img5.jpg"
 import c2Big from "../assets/Ethereal/c2img1.png"
-import c2small1 from "../assets/Ethereal/c2img2.png"
-import c2small2 from "../assets/Ethereal/c2img3.png"
-import c2small3 from "../assets/Ethereal/c2img4.png"
-import c2small4 from "../assets/Ethereal/c2img5.png"
-import c3Big from "../assets/Ethereal/c3img1.png"
-import c3small1 from "../assets/Ethereal/c3img2.png"
-import c3small2 from "../assets/Ethereal/c3img3.png"
-import c3small3 from "../assets/Ethereal/c3img4.png"
-import c3small4 from "../assets/Ethereal/c3img5.png"
+import c2small1 from "../assets/Ethereal/c2img2.jpg"
+import c2small2 from "../assets/Ethereal/c2img3.jpg"
+import c2small3 from "../assets/Ethereal/c2img4.jpg"
+import c2small4 from "../assets/Ethereal/c2img5.jpg"
+import c3Big from "../assets/Ethereal/c3img1.jpg"
+import c3small1 from "../assets/Ethereal/c3img2.jpg"
+import c3small2 from "../assets/Ethereal/c3img3.jpg"
+import c3small3 from "../assets/Ethereal/c3img4.jpg"
+import c3small4 from "../assets/Ethereal/c3img5.jpg"
 import logo from "../assets/Ethereal/logo.png"
 import "../CSS/Ethereal.css"
 import AOS from 'aos';
@@ -40,7 +42,7 @@ export default function EtherealDesignePage() {
         ],
         defi: " Pousser les limites de la créativité assistée par IA tout en maintenant une cohérence architecturale et fonctionnelle.",
         result: "Une série de concepts visuels percutants, ouvrant de nouvelles perspectives pour l'architecture durable et adaptative.",
-        images: [e1, e2, e3, e4, e5, e6, e7, e8],
+        images: [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10],
       };
   AOS.init();
   return (
@@ -48,6 +50,7 @@ export default function EtherealDesignePage() {
         <TopProject {...projectData} />
         <div className="displayEtherealImg">
             {/* Left Section */}
+                <img src={logo} alt="logo" className='logoMobile'/>
             <div className="image-group">
                 <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" src={c1Big} alt="Big Image 1" className="big-img" />
                 <div className="small-images">

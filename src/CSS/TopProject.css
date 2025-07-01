@@ -214,6 +214,9 @@ li{
 @media only screen 
   and (min-width: 1280px) 
   and (max-width: 1440px) {
+    body{
+        background-color: red;
+    }
     .headerComponent{
         margin-bottom: 3vh;
     }
@@ -296,4 +299,20 @@ li{
 .fadeImage.appearing {
     opacity: 1; /* Fade in */
     transform: scale(1); /* Reset to original size */
+}
+.mobile-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
