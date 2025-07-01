@@ -1,0 +1,11 @@
+.displayHouseOfCards{
+    display: flex;
+    justify-content: center;
+    margin-block: 20vh;
+}
+@media only screen and (max-width: 1185px) {
+    .displayHouseOfCards video{
+        max-width: 400px;
+        margin: 0;
+    }
+}

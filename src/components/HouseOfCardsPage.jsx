@@ -9,6 +9,8 @@ import h6 from "../assets/house/h6.jpg"
 import h7 from "../assets/house/h7.jpg"
 import h8 from "../assets/house/h8.jpg"
 import h9 from "../assets/house/h9.jpg"
+import houseDisplay from "../assets/house/houseDisplay.mov"
+import "../CSS/house.css"
 // import h10 from "../assets/house/h10.jpg"
 // import h11 from "../assets/house/h11.jpg"
 
@@ -30,7 +32,19 @@ export default function HouseOfCardsPage() {
   return (
     <div>
         <TopProject {...projectData} />
-        
+        <section className="displayHouseOfCards">
+            <video
+            src={houseDisplay}
+            autoPlay
+            loop
+            muted
+            playsInline
+            width="1568"
+            style={{ pointerEvents: 'none' }}
+            >
+                Your browser does not support the video tag.
+            </video>
+        </section>
     </div>
   )
 }

@@ -1,0 +1,48 @@
+.displayPlum {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-block: 18vh;
+}
+
+.squarePlumImg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.mask-container {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  clip-path: path("M0,0 H150 V150 Q75,180 0,150 Z"); /* Replace with actual shape */
+  -webkit-clip-path: path("M0,0 H150 V150 Q75,180 0,150 Z");
+}
+
+.masked-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plum-video {
+  width: 454px;
+  height: auto;
+  pointer-events: none;
+}
+@media screen and (max-width: 1068px) {
+  .displayPlum {
+    align-items: flex-start;
+      display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+  }
+  .displayPlum img{
+    max-width: 180px;
+  }
+  .plum-video{
+    width: 320px;
+  }
+}

@@ -54,6 +54,10 @@ export default function MollyProject() {
             <img data-aos="zoom-in" data-aos-duration="3000" src={img6} alt="" className='img6'/>
           </div>
         </section>
+        <a href="/path-to-your.pdf" target="_blank" rel="noopener noreferrer" className="project-link">
+          <span>voir l’intégralité du projet</span>
+          <span className="arrow">›</span>
+        </a>
     </div>
   )
 }

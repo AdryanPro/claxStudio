@@ -7,6 +7,12 @@ import pl5 from "../assets/plum/pl5.jpg"
 import pl6 from "../assets/plum/pl6.jpg"
 import pl7 from "../assets/plum/pl7.jpg"
 import pl8 from "../assets/plum/pl8.jpg"
+import plumVideo from "../assets/plum/plumVideo.mov"
+import pDisplay1 from "../assets/plum/pDisplay1.png"
+import pDisplay2 from "../assets/plum/pDisplay2.png"
+import pDisplay3 from "../assets/plum/pDisplay3.png"
+import pDisplay4 from "../assets/plum/pDisplay4.png"
+import "../CSS/plum.css"
 import TopProject from './TopProject'
 
 export default function PlumPage() {
@@ -27,6 +33,26 @@ export default function PlumPage() {
   return (
     <div>
         <TopProject {...projectData} />
+        <section className="displayPlum">
+          <div className="squarePlumImg">
+            <img src={pDisplay1} alt="" />
+            <img src={pDisplay2} alt="" />
+            <img src={pDisplay3} alt="" />
+            <img src={pDisplay4} alt="" />
+          </div>
+            <video
+            src={plumVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            width="1568"
+            className='plum-video'
+            style={{ pointerEvents: 'none' }}
+            >
+                Your browser does not support the video tag.
+            </video>
+        </section>
     </div>
   )
 }

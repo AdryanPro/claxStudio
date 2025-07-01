@@ -8,8 +8,11 @@ import r6 from "../assets/ricore/r6.jpg"
 import r7 from "../assets/ricore/r7.jpg"
 import r8 from "../assets/ricore/r8.jpg"
 import r9 from "../assets/ricore/r9.jpg"
+import ricoreDisplay1 from "../assets/ricore/ricoreDisplay1.png"
+import ricoreDisplay2 from "../assets/ricore/ricoreDisplay2.png"
+import ricoreDisplay3 from "../assets/ricore/ricoreDisplay3.png"
 import TopProject from './TopProject'
-
+import "../CSS/ricore.css"
 export default function RicorePage() {
     const projectData = {
         title: 'Rebranding',
@@ -29,6 +32,14 @@ export default function RicorePage() {
   return (
     <div>
         <TopProject {...projectData} />
+        <section className="ricoreDisplay">
+           <img src={ricoreDisplay1} alt="" className='ricoreDisplay1'/>
+          <div className="leftricoreDisplay">
+            <img src={ricoreDisplay3} alt="" className='ricoreDisplay3'/>
+            <img src={ricoreDisplay2} alt="" />
+          </div>
+         
+        </section>
     </div>
   )
 }
