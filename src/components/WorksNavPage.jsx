@@ -64,19 +64,24 @@ export default function WorksNavPage() {
                       <p className='subTxt'><span className='invisibleSpan'>(08)</span>Campagne 360°</p></Link>
           </li>
           <li>
-          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/Loue" onClick={() => window.scrollTo(0, 0)}>
                       <p className='titleWorksMenu'><span>(09)</span>LOUÉ :</p>
                       <p className='subTxt'><span className='invisibleSpan'>(09)</span>DESIGN PACKAGING</p></Link>
           </li>
           <li>
-          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/HouseOfCards" onClick={() => window.scrollTo(0, 0)}>
                       <p className='titleWorksMenu'><span>(10)</span>HOUSE OF CARDS  :</p>
                       <p className='subTxt'><span className='invisibleSpan'>(10)</span>CRÉATION DE GÉNÉRIQUE</p></Link>
           </li>
           <li>
-          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/PlumLiving" onClick={() => window.scrollTo(0, 0)}>
                       <p className='titleWorksMenu'><span>(11)</span>PLUM LIVING :</p>
                       <p className='subTxt'><span className='invisibleSpan'>(11)</span>MOTION DESIGN</p></Link>
+          </li>
+          <li>
+          <Link to="/Ricore" onClick={() => window.scrollTo(0, 0)}>
+                      <p className='titleWorksMenu'><span>(12)</span>Ricore :</p>
+                      <p className='subTxt'><span className='invisibleSpan'>(11)</span>REBRANDING</p></Link>
           </li>
         </ul>
       </div>

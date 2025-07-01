@@ -62,9 +62,6 @@
         /* font-size: 2rem; */
         /* font-size: 1rem; */
     }
-    .subTxt{
-        margin-left: 9.6vw !important;
-    }
 }
 @media only screen 
   and (min-device-width: 2560px) 

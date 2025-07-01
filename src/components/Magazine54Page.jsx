@@ -1,10 +1,16 @@
 import React from 'react'
 import TopProject from './TopProject';
-import s1 from "../assets/Studio/s1.png"
-import s2 from "../assets/Studio/s2.png"
-import s3 from "../assets/Studio/s3.png"
-import s4 from "../assets/Studio/s4.png"
-import s5 from "../assets/Studio/s5.png"
+import s1 from "../assets/Studio/s1.jpg"
+import s2 from "../assets/Studio/s2.jpg"
+import s3 from "../assets/Studio/s3.jpg"
+import s4 from "../assets/Studio/s4.jpg"
+import s5 from "../assets/Studio/s5.jpg"
+import s6 from "../assets/Studio/s6.jpg"
+import s7 from "../assets/Studio/s7.jpg"
+import s8 from "../assets/Studio/s8.jpg"
+import s9 from "../assets/Studio/s9.jpg"
+import s10 from "../assets/Studio/s10.jpg"
+import s11 from "../assets/Studio/s11.jpg"
 import Bottom1 from "../assets/Studio/Bootom1.png"
 import Bottom2 from "../assets/Studio/Bottom2.png"
 import Bottom3 from "../assets/Studio/Bottom3.png"
@@ -28,7 +34,7 @@ export default function Magazine54Page() {
      ],
      defi: " Allier l'esthétique rétro du Studio 54 à une approche éditoriale moderne et engageante.",
      result: "Un magazine qui capture l'essence du Studio 54 tout en explorant son impact culturel durable.",
-     images: [s1, s2, s3, s4, s5],
+     images: [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11],
   };
   AOS.init();
   return (

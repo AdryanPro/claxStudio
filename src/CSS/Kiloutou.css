@@ -8,7 +8,7 @@
 
 .kiloutoutouGrid {
     display: flex;
-    gap: 10px; /* Adjust spacing */
+    gap: 10px;
     max-width: 80vw;
   }
   
@@ -33,4 +33,27 @@
     bottom: 0;
     right: -52px;
     max-width: 42vw;
+}
+@media only screen and (max-width: 1185px) {
+    .mascotteKiloutou{
+        display: none;
+    }
+    .kiloutouDisplayImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .kiloutoutouGrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 12vh;
+    }
+    .left-img{
+        width: 100%;
+    }
+    .right-images {
+    width: 100%; 
+    }
 }

@@ -12,6 +12,10 @@ import NuitPage from './components/NuitPage'
 import KiloutouPage from './components/KiloutouPage'
 import GlobalCursor from './components/GlobalCursor'
 import TopPage from './components/TopPage'
+import LouePage from './components/LouePage'
+import HouseOfCardsPage from './components/HouseOfCardsPage'
+import PlumPage from './components/PlumPage'
+import RicorePage from './components/RicorePage'
 
 function App() {
 
@@ -30,6 +34,10 @@ function App() {
         <Route path='/ItaliansDoItBetter' element={<ItaliansDoItBetterPage />}/>
         <Route path='/NuitÉtoilée' element={<NuitPage />}/>
         <Route path='/Kiloutou' element={<KiloutouPage />}/>
+        <Route path='/Loue' element={<LouePage />}/>
+        <Route path='/HouseOfCards' element={<HouseOfCardsPage />}/>
+        <Route path='/PlumLiving' element={<PlumPage />}/>
+        <Route path='/Ricore' element={<RicorePage />}/>
         {/* <Route path='*' element={<Error />}/> */}
       </Routes>
     </>

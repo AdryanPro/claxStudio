@@ -352,6 +352,7 @@ body{
     max-width: 492px !important;
     max-height: 113px !important;
     height: 113px;
+    margin-top: 4vh;
 }
 .creativeApproch p{
     font-weight: 400;

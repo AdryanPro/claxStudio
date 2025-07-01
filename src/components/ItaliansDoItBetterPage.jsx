@@ -1,10 +1,16 @@
 import React from 'react'
 import TopProject from './TopProject';
-import i1 from "../assets/Italians/i1.png"
-import i2 from "../assets/Italians/i2.png"
-import i3 from "../assets/Italians/i3.png"
-import i4 from "../assets/Italians/i4.png"
-import i5 from "../assets/Italians/i5.png"
+import i1 from "../assets/Italians/i1.jpg"
+import i2 from "../assets/Italians/i2.jpg"
+import i3 from "../assets/Italians/i3.jpg"
+import i4 from "../assets/Italians/i4.jpg"
+import i5 from "../assets/Italians/i5.jpg"
+import i6 from "../assets/Italians/i6.jpg"
+import i7 from "../assets/Italians/i7.jpg"
+import i8 from "../assets/Italians/i8.jpg"
+import i9 from "../assets/Italians/i9.jpg"
+import i10 from "../assets/Italians/i10.jpg"
+import i11 from "../assets/Italians/i11.jpg"
 import gauche from "../assets/Italians/gauche.png"
 import droite from "../assets/Italians/droite.png"
 import "../CSS/Italians.css"
@@ -24,7 +30,7 @@ export default function ItaliansDoItBetterPage() {
     ],
     defi: "Transcender les clichés pour créer une affiche à la fois moderne et intemporelle, tout en restant fidèle à l'esprit de la marque.",
     result: "Une affiche immersive qui incarne l'élégance et la joie de vivre italiennes, prête à captiver son public.",
-    images: [i1, i2, i3, i4, i5],
+    images: [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11],
   };
   AOS.init();
   return (

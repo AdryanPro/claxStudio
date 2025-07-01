@@ -1,0 +1,14 @@
+.displayLoue{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.displayLoue img{
+    width: 80%;
+}
+.loueDisplay2{
+    position: absolute;
+    bottom: -20vh;
+    right: -4vw;
+    max-width: 800px;
+}

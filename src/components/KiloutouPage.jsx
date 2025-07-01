@@ -1,10 +1,13 @@
 import React from 'react'
 import TopProject from './TopProject';
-import k1 from "../assets/Kiloutou/k1.png"
-import k2 from "../assets/Kiloutou/k2.png"
-import k3 from "../assets/Kiloutou/k3.png"
-import k4 from "../assets/Kiloutou/k4.png"
-import k5 from "../assets/Kiloutou/k5.png"
+import k1 from "../assets/Kiloutou/k1.jpg"
+import k2 from "../assets/Kiloutou/k2.jpg"
+import k3 from "../assets/Kiloutou/k3.jpg"
+import k4 from "../assets/Kiloutou/k4.jpg"
+import k5 from "../assets/Kiloutou/k5.jpg"
+import k6 from "../assets/Kiloutou/k6.jpg"
+import k7 from "../assets/Kiloutou/k7.jpg"
+import k8 from "../assets/Kiloutou/k8.jpg"
 import imgGauche from "../assets/Kiloutou/GrosGauche.png"
 import imgDroite1 from "../assets/Kiloutou/DroiteHaut.png"
 import imgDroite2 from "../assets/Kiloutou/DroiteBas.png"
@@ -14,7 +17,7 @@ import AOS from 'aos';
 
 export default function KiloutouPage() {
   const projectData = {
-    title: 'CAMPAGNE 360',
+    title: 'CAMPAGNE 360°',
     subtitle: 'Kiloutou',
     projectNumber: '08',
     mission: "Conception d'une campagne publicitaire pour Kiloutou, visant à cibler les artisans et à renforcer l'image de la marque comme partenaire de confiance.",
@@ -25,7 +28,7 @@ export default function KiloutouPage() {
     ],
     defi: "Créer une mascotte qui soit à la fois mémorable, polyvalente (pour différents supports) et proche des artisans.",
     result: "Une campagne qui renforce l'image de Kiloutou comme partenaire des artisans, avec une mascotte devenue emblématique.",
-    images: [k1, k2, k3, k4, k5],
+    images: [k1, k2, k3, k4, k5, k6, k7, k8],
   };
   AOS.init();
   return (
