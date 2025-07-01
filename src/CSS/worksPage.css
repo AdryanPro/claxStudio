@@ -19,7 +19,12 @@
     min-width: 60vw;
     margin: 0;
     padding: 0;
+    max-height: 80vh;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
 }
+
 .worksPageWrapper ul p{
     font-family: 'FormaDJRDisplay-Bold';
     font-weight: 900 !important;

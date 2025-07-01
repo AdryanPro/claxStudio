@@ -13,7 +13,7 @@ export default function WorksNavPage() {
         <h1 className='h1MenuWorkMobile'>WORKS</h1>
         <h1 className='h1MenuWorkCoolFontMobile'>Works</h1>
         {/* Supprime a partir dici */}
-        <ul>
+        <ul className='ulWorsPage'>
         
           <li className='casseCouilleLesP'>
             <Link to='/Molly' onClick={() => window.scrollTo(0, 0)}>
@@ -25,7 +25,7 @@ export default function WorksNavPage() {
           <li>
             <Link to="/Miscible" onClick={() => window.scrollTo(0, 0)}>
               <p className='titleWorksMenu'><span>(02)</span>MISCIBLE :</p>
-              <p className='subTxt'><span className='invisibleSpan'>(02)</span>Design écoresponsable et luxe.</p></Link>
+              <p className='subTxt'><span className='invisibleSpan'>(02)</span>Design écoresponsable.</p></Link>
           </li>
 
           <li>
@@ -36,7 +36,7 @@ export default function WorksNavPage() {
 
           <li>
             <Link to="/PlaisirÉphémères" onClick={() => window.scrollTo(0, 0)}>
-                        <p className='titleWorksMenu'><span>(04)</span>PLaisirs éphémères :</p>
+                        <p className='titleWorksMenu'><span>(04)</span>INNOVATION ET IA :</p>
                         <p className='subTxt'><span className='invisibleSpan'>(04)</span>Set design et photographie.</p></Link>
           </li>
 
@@ -49,13 +49,13 @@ export default function WorksNavPage() {
           <li>
           <Link to="/ItaliansDoItBetter" onClick={() => window.scrollTo(0, 0)}>
             <p className='titleWorksMenu'><span>(06)</span>Italians Do It Better : </p>
-            <p className='subTxt'><span className='invisibleSpan'>(06)</span>Affiche illustrative et direction artistique.</p></Link>
+            <p className='subTxt'><span className='invisibleSpan'>(06)</span>Affiche illustrative.</p></Link>
           </li>
 
           <li>
           <Link to="/NuitÉtoilée" onClick={() => window.scrollTo(0, 0)}>
                       <p className='titleWorksMenu'><span>(07)</span>NUIT ÉTOILÉE :</p>
-                      <p className='subTxt'><span className='invisibleSpan'>(07)</span>Illustration et adaptation à un public cible.</p></Link>
+                      <p className='subTxt'><span className='invisibleSpan'>(07)</span>Illustration.</p></Link>
           </li>
 
           <li>
