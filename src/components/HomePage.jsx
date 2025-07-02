@@ -3,9 +3,14 @@ import carousel1 from '../assets/carousel/carouselWorks1.png';
 import carousel2 from '../assets/carousel/carouselWorks2.png';
 import carousel3 from '../assets/carousel/carouselWorks3.png';
 import carousel4 from '../assets/carousel/carouselWorks4.png';
-import carousel5 from '../assets/carousel/carouselWorks5.png';
+import carousel5 from '../assets/carousel/carouselWorks5.jpg';
 import carousel6 from '../assets/carousel/carouselWorks6.png';
 import carousel7 from '../assets/carousel/carouselWorks7.png';
+import carousel8 from '../assets/carousel/carousel08.jpg';
+import carousel9 from '../assets/carousel/carousel09.jpg';
+import carousel10 from '../assets/carousel/carousel10.jpg';
+import carousel11 from '../assets/carousel/carousel11.jpg';
+import carousel12 from '../assets/carousel/carousel12.jpg';
 import colored1 from '../assets/carousel/colored1.png';
 import colored2 from '../assets/carousel/colored2.png';
 import colored3 from '../assets/carousel/colored3.png';
@@ -28,11 +33,16 @@ export default function HomePage() {
     const images = [
         { src: carousel1, coloredSrc: colored1, text1: "direction artistique", text2: "© italians do it better", text3: "SDP 23, CL29", link: "/ItaliansDoItBetter", number: "(06)" },
         { src: carousel2, coloredSrc: colored2, text1: "design éditorial", text2: "© studio 54", text3: "SDP 25, CL29", link: "/MagazineStudio54", number: "(05)"},
-        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© plaisirs éphémères", text3: "SDP 24, CL29", link: "/PlaisirÉphémères", number: "(04)" },
+        { src: carousel3, coloredSrc: colored3, text1: "set design", text2: "© INNOVATION ET IA", text3: "SDP 24, CL29", link: "/PlaisirÉphémères", number: "(04)" },
         { src: carousel4, coloredSrc: colored4, text1: "innovation et architecture", text2: "© ethereal design", text3: "SDP 25, CL29", link: "/EtherealDesigne", number: "(03)" },
         { src: carousel5, coloredSrc: colored5, text1: "design responsable", text2: "© miscible", text3: "SDP 25, CL29", link: "/Miscible",number: "(02)" },
         { src: carousel6, coloredSrc: colored6, text1: "création de marque", text2: "© molly beauty", text3: "SDP 24, CL29", link: "/Molly",number: "(01)" },
-        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée",number: "(07)" }
+        { src: carousel7, coloredSrc: colored7, text1: "illustration", text2: "© nuit étoilée ", text3: "SDP 23, CL29", link: "/NuitÉtoilée",number: "(07)" },
+        { src: carousel8, coloredSrc: colored7, text1: "campagne 360°", text2: "© kiloutou ", text3: "SDP 25, CL29", link: "/Kiloutou",number: "(08)" },
+        { src: carousel9, coloredSrc: colored7, text1: "design packaging", text2: "© loué ", text3: "SDP 25, CL29", link: "/Loue",number: "(09)" },
+        { src: carousel10, coloredSrc: colored7, text1: "création de générique", text2: "© house of cards ", text3: "SDP 23, CL29", link: "/HouseOfCards",number: "(10)" },
+        { src: carousel11, coloredSrc: colored7, text1: "motion design", text2: "© plum living", text3: "SDP 23, CL29", link: "/PlumLiving",number: "(11)" },
+        { src: carousel12, coloredSrc: colored7, text1: "rebranding", text2: "© ricoré ", text3: "SDP 23, CL29", link: "/NuitÉtoilée",number: "(12)" },
     ];
     const [cursorColor, setCursorColor] = useState('black'); // Default color
     //const [isTouchDevice, setIsTouchDevice] = useState(false); //Detect touch devices

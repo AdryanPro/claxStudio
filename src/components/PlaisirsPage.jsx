@@ -23,7 +23,7 @@ import 'aos/dist/aos.css';
 export default function PlaisirsPage() {
   const projectData = {
     title: 'Set Design & Photographie',
-    subtitle: 'Plaisirs Ephémères',
+    subtitle: 'Tempting The Void',
     projectNumber: '04',
     mission: " Création d'une série de décors immersifs inspirés de l'esthétique iconique du Studio 54, combinant set design et photographie pour capturer l'esprit glamour et festif des années 70.",
     realisation: [
@@ -39,16 +39,22 @@ export default function PlaisirsPage() {
   return (
     <div>
       <TopProject {...projectData}/>
-      <section className="displayPlaisirImg">
-        <div className="imgPlaisirWrapper">
-          <img data-aos="flip-right" data-aos-duration="2000" src={plaisir1} alt="" className='plaisirImg1 plaisirEquilbre'/>
-          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300" src={plaisir2} alt="" className='plaisirImg2 img2Plaisir'/>
-          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="400" src={plaisir3} alt="" className='plaisirImg3 plaisirEquilbre'/>
-          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" src={plaisir4} alt="" className='plaisirImg4 img2Plaisir'/>
-          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600" src={plaisir5} alt="" className='plaisirImg5 plaisirEquilbre'/>
-          <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="700" src={plaisir6} alt="" className='plaisirImg6 img2Plaisir'/>
-        </div>
-      </section>
+      <div className="pdfWrapper">
+        <section className="displayPlaisirImg">
+          <div className="imgPlaisirWrapper">
+            <img data-aos="flip-right" data-aos-duration="2000" src={plaisir1} alt="" className='plaisirImg1 plaisirEquilbre'/>
+            <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300" src={plaisir2} alt="" className='plaisirImg2 img2Plaisir'/>
+            <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="400" src={plaisir3} alt="" className='plaisirImg3 plaisirEquilbre'/>
+            <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500" src={plaisir4} alt="" className='plaisirImg4 img2Plaisir'/>
+            <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600" src={plaisir5} alt="" className='plaisirImg5 plaisirEquilbre'/>
+            <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="700" src={plaisir6} alt="" className='plaisirImg6 img2Plaisir'/>
+          </div>
+        </section>
+            <a href="/plaisir.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMolly">
+                <span>voir l’intégralité du projet</span>
+                <span className="arrow">›</span>
+            </a>
+      </div>
     </div>
   )
 }

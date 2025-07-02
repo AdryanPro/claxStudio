@@ -34,16 +34,22 @@ export default function KiloutouPage() {
   return (
     <div>
       <TopProject {...projectData} />
-      <section className="kiloutouDisplayImg">
-        <div className="kiloutoutouGrid">
-          <img src={imgGauche} alt="" className="left-img" />
-          <div className="right-images">
-            <img src={imgDroite1} alt="" />
-            <img src={imgDroite2} alt="" />
+      <div className="pdfWrapper">
+        <section className="kiloutouDisplayImg">
+          <div className="kiloutoutouGrid">
+            <img src={imgGauche} alt="" className="left-img" />
+            <div className="right-images">
+              <img src={imgDroite1} alt="" />
+              <img src={imgDroite2} alt="" />
+            </div>
           </div>
-        </div>
-        <img data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" src={mascotte} alt="" className='mascotteKiloutou'/>
-      </section>
+          <img data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" src={mascotte} alt="" className='mascotteKiloutou'/>
+        </section>
+                <a href="/kiloutou.pdf" target="_blank" rel="noopener noreferrer" id='linkKiloutou' className="project-link ">
+                    <span>voir l’intégralité du projet</span>
+                    <span className="arrow">›</span>
+                </a>
+    </div>
     </div>
   )
 }

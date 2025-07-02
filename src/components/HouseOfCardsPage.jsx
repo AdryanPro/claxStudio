@@ -17,7 +17,7 @@ import "../CSS/house.css"
 export default function HouseOfCardsPage() {
     const projectData = {
         title: 'CRÉATION DE GÉNÉRIQUE',
-        subtitle: 'HOUSE OF CARDS',
+        subtitle: 'House Of Cards',
         projectNumber: '10',
         mission: "repenser le générique emblématique de House of Cards en utilisant une technique de collage animé, pour renforcer les thèmes de manipulation politique et de fragilité du pouvoir.",
         realisation: [
@@ -32,19 +32,16 @@ export default function HouseOfCardsPage() {
   return (
     <div>
         <TopProject {...projectData} />
-        <section className="displayHouseOfCards">
-            <video
-            src={houseDisplay}
-            autoPlay
-            loop
-            muted
-            playsInline
-            width="1568"
-            style={{ pointerEvents: 'none' }}
-            >
+            <section className="displayHouseOfCards">
+                <video
+                src={houseDisplay}
+                controls
+                width="1568"
+                style={{ pointerEvents: 'auto' }} // Permet les interactions
+                >
                 Your browser does not support the video tag.
-            </video>
-        </section>
+                </video>
+            </section>
     </div>
   )
 }

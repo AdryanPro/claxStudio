@@ -40,14 +40,20 @@ export default function Magazine54Page() {
   return (
     <div className='Studiowrapper'>
       <TopProject {...projectData}/>
-      <section className="displayImgStudio">
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom1} alt="" className='StudioImg1' />
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom2} alt="" className='StudioImg2'/>
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom3} alt="" className='StudioImg3'/>
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom4} alt="" className='StudioImg4'/>
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom5} alt="" className='StudioImg5'/>
-        <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom6} alt="" className='StudioImg6'/>
-      </section>
+      <div className="pdfWrapper">
+        <section className="displayImgStudio">
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom1} alt="" className='StudioImg1' />
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom2} alt="" className='StudioImg2'/>
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom3} alt="" className='StudioImg3'/>
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom4} alt="" className='StudioImg4'/>
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom5} alt="" className='StudioImg5'/>
+          <img data-aos="zoom-in" data-aos-duration="3000" src={Bottom6} alt="" className='StudioImg6'/>
+        </section>
+              <a href="/studio54.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMolly">
+                  <span>voir l’intégralité du projet</span>
+                  <span className="arrow">›</span>
+              </a>
+      </div>
     </div>
   )
 }

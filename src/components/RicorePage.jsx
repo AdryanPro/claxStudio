@@ -16,7 +16,7 @@ import "../CSS/ricore.css"
 export default function RicorePage() {
     const projectData = {
         title: 'Rebranding',
-        subtitle: 'RICORÉ',
+        subtitle: 'Ricoré',
         projectNumber: '12',
         mission: "refonte de l’identité visuelle de Ricoré afin de moderniser la marque et séduire une nouvelle cible : les trentenaires et jeunes actifs en quête de rituels bien-être.",
         realisation: [
@@ -32,14 +32,20 @@ export default function RicorePage() {
   return (
     <div>
         <TopProject {...projectData} />
-        <section className="ricoreDisplay">
-           <img src={ricoreDisplay1} alt="" className='ricoreDisplay1'/>
-          <div className="leftricoreDisplay">
-            <img src={ricoreDisplay3} alt="" className='ricoreDisplay3'/>
-            <img src={ricoreDisplay2} alt="" />
-          </div>
-         
-        </section>
+      <div className="pdfWrapper">
+          <section className="ricoreDisplay">
+            <img src={ricoreDisplay1} alt="" className='ricoreDisplay1'/>
+            <div className="leftricoreDisplay">
+              <img src={ricoreDisplay3} alt="" className='ricoreDisplay3'/>
+              <img src={ricoreDisplay2} alt="" />
+            </div>
+          
+          </section>
+                {/* <a href="/studio54.pdf" target="_blank" rel="noopener noreferrer" className="project-link linkMolly linkRicore">
+                    <span>voir l’intégralité du projet</span>
+                    <span className="arrow">›</span>
+                </a> */}
+      </div>
     </div>
   )
 }

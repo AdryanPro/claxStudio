@@ -18,7 +18,7 @@ import TopProject from './TopProject'
 export default function PlumPage() {
     const projectData = {
         title: 'MOTION DESIGN',
-        subtitle: 'PLUM LIVING',
+        subtitle: 'Plum Living',
         projectNumber: '11',
         mission: "création de contenus visuels et d'une vidéo en motion design pour Plum Living, destinés aux réseaux sociaux, avec pour objectif de capter l’attention et d’inciter à l’action.",
         realisation: [
@@ -33,26 +33,30 @@ export default function PlumPage() {
   return (
     <div>
         <TopProject {...projectData} />
-        <section className="displayPlum">
-          <div className="squarePlumImg">
-            <img src={pDisplay1} alt="" />
-            <img src={pDisplay2} alt="" />
-            <img src={pDisplay3} alt="" />
-            <img src={pDisplay4} alt="" />
-          </div>
+        <div className="pdfWrapper">
+          <section className="displayPlum">
+            <div className="squarePlumImg">
+              <img src={pDisplay1} alt="" />
+              <img src={pDisplay2} alt="" />
+              <img src={pDisplay3} alt="" />
+              <img src={pDisplay4} alt="" />
+            </div>
             <video
-            src={plumVideo}
-            autoPlay
-            loop
-            muted
-            playsInline
-            width="1568"
-            className='plum-video'
-            style={{ pointerEvents: 'none' }}
+              src={plumVideo}
+              loop
+              controls
+              width="1568"
+              className="plum-video"
+              style={{ pointerEvents: 'auto' }}
             >
-                Your browser does not support the video tag.
+              Your browser does not support the video tag.
             </video>
-        </section>
+          </section>
+                <a href="/plum.pdf" target="_blank" rel="noopener noreferrer" id='plumLink' className="project-link">
+                    <span>voir l’intégralité du projet</span>
+                    <span className="arrow">›</span>
+                </a>
+      </div>
     </div>
   )
 }

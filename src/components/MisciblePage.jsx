@@ -20,14 +20,14 @@ export default function MisciblePage() {
     title: 'CRÉATION DE MARQUE',
     subtitle: 'Miscible',
     projectNumber: '02',
-    mission: "Concevoir une identité visuelle et un packaging premium, en adéquation avec les valeurs de durabilité et de sophistication.",
+    mission: "positionner Miscible comme une alternative radicalement différente  où l’écoresponsabilité se vit par l’expérience, pas par le discours ni l’esthétique.",
     realisation: [
-        "Identité visuelle : Typographie customisée, palette chromatique neutre, design épuré.",
-        "Packaging : Flacons en verre soufflé, sachets de recharge en papier recyclé certifié FSC, finitions soft touch mat et embossage du logo.",
-        "Expérience utilisateur : Optimisation de l'ergonomie des contenants et des systèmes de recharge.",
+        "identité visuelle : Typographie customisée, palette chromatique neutre, design épuré.",
+        "packaging : Flacons en acier brillant, sachets de recharge en  chrome, finitions.",
+        "expérience utilisateur : Optimisation de l'ergonomie des contenants et des systèmes de recharge.",
     ],
-    defi: " Allier les contraintes techniques de l'écoresponsabilité (matériaux recyclés, processus de production durable) avec les exigences du luxe (toucher premium, esthétique raffinée).",
-    result: "Une marque qui redéfinit le luxe moderne, avec une identité visuelle et tactile cohérente, prête à séduire un public exigeant.",
+    defi: "allier les contraintes techniques de l'écoresponsabilité (matériaux recyclés, processus de production durable) avec les exigences du luxe (toucher premium, esthétique raffinée).",
+    result: "une marque qui redéfinit le luxe moderne, avec une identité visuelle et tactile cohérente, prête à séduire un public exigeant.",
     images: [m1, m2, m3, m4, m5, m6, m7, m8, m9],
   };
   return (

@@ -177,6 +177,8 @@ body{
 .carouselImg {
     min-width: 260px; /* +50 */
     min-height: 347px; /* +50 */
+    max-width: 261px; /* +50 */
+    max-height: 348px; /* +50 */
     object-fit: cover;
     transition: transform 1s ease-in-out; /* Modifying the seep of the image*/
 }
@@ -244,7 +246,7 @@ body{
                     /* section graphic */
 .graphicWrapper{
     background-color: black;
-    min-height: 70vh;
+    min-height: 100vh;
     color: white;
     padding-inline: 6vw;
     padding-block: 9vh;
@@ -327,7 +329,7 @@ body{
     font-weight: 500;
     font-size: 1.5rem !important;
     text-align: right;
-    margin-right: 3vw;
+    /* margin-right: 3vw; */
     margin-bottom: 10vh;
     /* line-height: 100% !important; */
     position: absolute;
@@ -337,7 +339,7 @@ body{
 }
 .contactH2{
     text-align: right;
-    margin-right: 3vw;
+    /* margin-right: 3vw; */
     line-height: 0;
     margin-bottom: 3vh;
     position: absolute;
@@ -374,21 +376,21 @@ body{
     line-height: 100% !important;
     font-size: 1.5rem !important;
     text-transform: uppercase;
-
+    /* bottom: -5vh; */
 }
 .creativeApprochH2{
     position: absolute;
     text-align: left;
     z-index: 11;
     left: 4vw;
-    bottom: -60px;
+    bottom: -12vh;
     margin-top: 0 !important;
     line-height: 0% !important;
 }
 .keySkills{
     position: absolute;
     right: 15vw;
-    bottom: 20vh;
+    bottom: 30vh;
     width: 400px;
     height: 151px;
 }
@@ -415,7 +417,7 @@ body{
     line-height: 100% !important;
     font-size: 1.5rem !important;
     position: absolute;
-    bottom: -14vh;
+    bottom: -21vh;
     text-transform: uppercase;
 }
 .keySkillsH2{
@@ -423,7 +425,7 @@ body{
     text-align: left;
     margin-left: 3vw;
     margin-bottom: 0;
-    bottom: -15vh;
+    bottom: -22vh;
     padding-block: 1vh;
     padding-bottom: 0;
 }
